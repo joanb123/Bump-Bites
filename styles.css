@@ -1,0 +1,73 @@
+/* background image of snack box together with paper (Home)*/
+.homeBody{
+    background-image: url('imageAssets/bbimage1.png');
+}
+
+/* scrolling text on homepage */
+marquee{
+  background-color:#4c6044;
+  color:#ffffff
+}
+
+.homeButton {
+  background-color: #4c6044;
+  color:#ffffff;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 4px;
+
+}
+
+
+#introInfo{
+  text-align:left;
+}
+
+/* headings */
+#curatedSnacks{
+  color:#4c6044
+}
+
+#just{
+  color:#4c6044
+}
+
+#tellUsMore{
+  color:#4c6044;
+}
+
+
+
+/* nav bar */
+
+nav{
+  color: #f9f0E9
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+
+/* text color */
+.required{
+  color:red;
+}
+
+
+/*images*/
