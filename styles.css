@@ -69,5 +69,57 @@ ul {
   color:red;
 }
 
+/*About us*/
+/*text color*/
+
+#aboutUs{
+  color:#ffffff;
+  background-color: #4c6044;
+  text-align: center;
+}
+
+
+#forwardText{
+  color:#ffffff;
+  background-color: #4c6044;
+  text-align: center;
+}
+
+/*Terms and Conditions and Privacy Policy Text*/
+#termsAndConditions{
+  text-align: center;
+}
+
+#lastUpdated{
+  font-style: italic;
+  text-align: center;
+}
+
+.termsText{
+  text-align: center;
+}
+
+.termsBodyText{
+  text-align: center;
+}
+
+.banner{
+  color:#ffffff;
+  background-color: #4c6044;
+  text-align: center;
+}
+
+/*FAq*/
+#faq{
+  background-color: #f9f0E9;
+  text-align: center;
+  text-decoration: underline;
+  /*needs to include shadow*/
+
+}
+
+.faqBoxes{
+  background-color: #f9f0E9;
+}
 
 /*images*/
