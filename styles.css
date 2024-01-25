@@ -110,28 +110,25 @@ ul {
     justify-content: center;
   }
 
-/*Terms and Conditions and Privacy Policy Text*/
-#termsAndConditions{
-  text-align: center;
+/*Terms and Conditions and Privacy Policy*/
+#termsAndCoBody {
+  background-color: #CDDEBC;
+  font-family: Georgia;
+  font-size: 20px;
+  color: black;
 }
 
-#lastUpdated{
-  font-style: italic;
-  text-align: center;
+#termsAndCoText {
+  background-color: #F9F0E9;
+  padding: 50px;
+  margin: 150px;
+  border-radius: 10px;
+  border-style: solid;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
-.termsText{
-  text-align: center;
-}
-
-.termsBodyText{
-  text-align: center;
-}
-
-.banner{
-  color:#ffffff;
-  background-color: #4c6044;
-  text-align: center;
+.termsAndCoFont{
+  font-family: "Source Serif Pro";
 }
 
 /*FAq*/
