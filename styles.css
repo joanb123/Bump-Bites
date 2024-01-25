@@ -110,15 +110,15 @@ ul {
     justify-content: center;
   }
 
-/*Terms and Conditions and Privacy Policy*/
-#termsAndCoBody {
+/*termsAndCo and privacyPolicy*/
+.termsAndCoBody {
   background-color: #CDDEBC;
   font-family: Georgia;
   font-size: 20px;
   color: black;
 }
 
-#termsAndCoText {
+.termsAndCoText {
   background-color: #F9F0E9;
   padding: 50px;
   margin: 150px;
