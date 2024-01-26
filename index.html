@@ -1,105 +1,116 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width" initial-scale="1">
-    <!--This is to link the Favicon (need to resize image to see logo better)-->
-    <link rel="icon" type="image" href="imageAssets/favIcon.png">
-
-    <!--linking CSS-->
-    <link rel="stylesheet" href="styles.css">
-
-    <!--this is to link Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
     <head>
-    <!--Title is to see the name of website on the user's tabs-->
-        <title> BumpBites </title>
-
-        <link rel="stylesheet" type="text/css" href="styles.css">
-
-        <body class="homeBody">
-    <!--Nav bar (this is a placeholder, utilized Bootstrap)-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-    <!--Will need to update # for links to other areas of the site-->
-                <a class="navbar-brand" href="#">Bump Bites </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarClick" aria-controls="navbarClick" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbar">
-                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Our Box <span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Blog</a>
-                    </li>
-                  </ul>
-
-                </div>
-              </nav>
-
-    <!--Scrolling Marquee-->
-              <marquee direction="right">
-                <b>Free</b> shipping with all bundles! Order Today!
-                <b>Free</b> shipping with all bundles! Order Today!
-                <b>Free</b> shipping with all bundles! Order Today!
-                <b>Free</b> shipping with all bundles! Order Today!
-                <b>Free</b> shipping with all bundles! Order Today!
-              </marquee>
-
-                <h1 id="curatedSnacks">Curated Snacks</h1>
-
-                <h2 id="just">Just for you</h2>
-
-                <br>
-
-                <p id="introInfo">
-                    Indulge in the delight of three full-size
-                    <br>
-
-                    snacks meticulously curated to cater to your
-
-                    <br>
-                    sweet, salty, and savory cravings
-
-                    <br>
-                    with Bump Bites Pregnancy Snack Craving Box
-
-    <!--Breaks to Seperate text-->
-                    <br>
-                    <br>
-                     <b>Cancel at anytime</b></p>
-
-
-    <!--Get Started Button-->
-    <!--PLACEHOLDER will need to replace text link-->
-                <button class="homeButton" type="button"> GET STARTED </button>
-
-    <!--This is placeholder for the footer, will need to add images and format-->
-                <nav class="navbar fixed-bottom bg-body-tertiary">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#">
-                    Support
-                    FAQ
-                    Connect with us
-                    Contact Us
-                    Bump Bites, Inc.
-                    Privacy Policy
-                    Terms and Conditions
-                </a>
-                    </div>
-                    </nav>
-
-        </body>
+      <title> BumpBites </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width" initial-scale="1">
+      <!--This is to link the Favicon (need to resize image to see logo better)-->
+      <link rel="icon" type="image" href="imageAssets/favIcon.png">
+      <!-- social icons-->
+      <script src="https://kit.fontawesome.com/0953d42dc3.js" crossorigin="anonymous"></script> 
+      <!--linking CSS-->
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <!--this is to link Bootstrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
+
+  <body>
+  <!-- header section & nav bar -->
+<header>
+  <div class="container"> 
+
+    <div class="nav-content"> 
+    <a href="#" class="logo"> BumpBites </a>
+  </div> 
+
+  <div class="nav-content">  
+    <nav class="navbar">
+      <a href="#home"> Home </a> 
+      <a href="#about"> About </a>
+      <a href="#more"> More </a>
+    </nav>
+  </div>  
+
+  <div class="nav-content">  
+    <div class="navIcon">
+      <ul class="profile-icons">
+       <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+       <li><a href=""><i class="fab fa-twitter"></i></a></li>
+      </ul>
+      </div>
+  </div>
+</div>
+</header>
+
+
+  <main> 
+       <!--Scrolling Marquee-->
+  <marquee direction="right">
+    <b>Free</b> shipping with all bundles! Order Today!
+    <b>Free</b> shipping with all bundles! Order Today!
+    <b>Free</b> shipping with all bundles! Order Today!
+    <b>Free</b> shipping with all bundles! Order Today!
+    <b>Free</b> shipping with all bundles! Order Today!
+  </marquee>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 id="curatedSnacks">Curated Snacks</h1>
+    <h2 id="just">Just for you</h2>
+    <br>
+    <p id="introInfo">
+        Indulge in the delight of three full-size
+        <br>
+        snacks meticulously curated to cater to your
+        <br>
+        sweet, salty, and savory cravings
+        <br>
+        with Bump Bites Pregnancy Snack Craving Box
+<!--Breaks to Seperate text-->
+        <br>
+        <p id="cancel"> 
+        <br>
+         Cancel at anytime</p>
+         <br>
+         <button type="button" class="button">Get Started</button>
+  </div>
+</div>
+  </main>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="container">
+          <div class="footer-content">
+              <h3 id="quick">Quick Links</h3>
+              <ul class="list"> 
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Terms and Conditons</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+          </div>
+          <div class="footer-content">
+            <div class="vertical"></div>
+            </div>
+          <div class="footer-content">
+              <h3 id="follow">Follow Us</h3>
+              <ul class="social-icons">
+               <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+               <li><a href=""><i class="fab fa-twitter"></i></a></li>
+               <li><a href=""><i class="fab fa-instagram"></i></a></li>
+               <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+              </div>
+      </div>
+      <div class="bottom-bar">
+          <p>&copy; 2023 BumpBites . All rights reserved. </p>
+            
+          </p>
+      </div>
+  </footer>
+        </body>
+
 
 <!--end-->
 </html>

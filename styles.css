@@ -1,67 +1,325 @@
-/* background image of snack box together with paper (Home)*/
-.homeBody{
-    background-image: url('imageAssets/bbimage1.png');
+/* HOME PAGE*/
+
+body, html {
+  height: 100%;
+  
+}
+.main {
+  overflow: visible;
+
+
+}
+/* The hero image */
+.hero-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("imageAssets/bbimage1.png");
+width: 100vw;
+height: 100vh; 
+background-size: 100% 100%;
+background-repeat: no-repeat;
+position: relative;
+background-size: cover;
+margin-bottom: auto;
+background-attachment: fixed;
+}
+
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: left;
+position: relative;
+top: 50%;
+left: 60%;
+transform: translate(-50%, -50%);
+}
+
+#curatedSnacks{
+flex-shrink: 0;
+color: #4C6044;
+font-family: "Source Serif Pro";
+font-size: 70px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+#just {
+flex-shrink: 0;
+color: #4C6044;
+font-family: "Source Serif Pro";
+font-size: 55px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+#introInfo {
+color: #000;
+font-family: Georgia;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#cancel {
+  color: #000;
+  font-family: Georgia;
+  font-size: 25px;
+  font-style: bold;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.button {
+background-color: #4c6044;
+color:#ffffff;
+text-align: center;
+padding: 15px 17px;
+border-radius: 5px;
+border: none;
+box-shadow: #000;
+font-family: Vilane;
+font-size: 25px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1px;
+}
+
+.button:hover {
+  background-color:#7D8F70;
+  transition: 0.7s;
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: left; 
+  flex-grow: 1;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
 }
 
 /* scrolling text on homepage */
 marquee{
   background-color:#4c6044;
   color:#ffffff;
+ 
 }
-
-.homeButton {
-  background-color: #4c6044;
-  color:#ffffff;
-  text-align: center;
-  padding: 10px 14px;
-  border-radius: 4px;
-
+/* nav container */
+.nav-content{
+  width: 60.3%;
 }
-
-
-#introInfo{
-  text-align:left;
-}
-
-/* headings */
-#curatedSnacks{
-  color:#4c6044
-}
-
-#just{
-  color:#4c6044
-}
-
-#tellUsMore{
-  color:#4c6044;
-}
-
-
-
 /* nav bar */
-
-nav{
-  color: #f9f0E9
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #FBF6F2;
+  padding: 1rem 6%;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  color: #4C6044;
+  font-family: "Source Serif Pro";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  text-align: left;
+  padding-top: 15px;
+  text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-   
-  }
+header .navbar a {
+  font-size: 1rem;
+  padding: 0 1.7rem;
+  color: #040604;
+  overflow: auto;
+font-family: Vilane;
+font-size: 17px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+word-spacing: 8px;
+text-decoration: none;
+text-align: center;
+}
+
+header .navbar a:hover {
+  color: var(#7D8F70);
+}
+
+header .navIcon {
+  display: inline-block;
+  text-align: right;
+  padding: 5px;
+}
+
+
+
+/* header icons */
+.profile-icons{
+  text-align: center;
+  padding: 0;
+}
+.profile-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+.profile-icons i{
+  color: BLACK;
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #4c6044;
+}
+.profile-icons i:hover{
+  color: #4c6044;
+}
+
+
+/* footer */
+*{
+  margin: 0;
+  padding: 0;
   
-  li {
-    float: left;
-  }
+}
+footer{
+  background: #F9F0E9;
+  padding-top: 40px;
+  margin-top: auto;
+  bottom: 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.container{
+  width: auto;
+  margin: auto;
+  display: flex;
+}
+.footer-content{
+  width: 60.3%;
+}
+
+h3{ 
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.h3 .quick {
+color: #000;
+font-family: "Source Serif Pro";
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.h3 .follow {
+  color: #4C6044;
+  font-family: "Source Serif Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
+/* vertical line in footer */
+.vertical {
+  border-left: 2px solid #4c6044;
+  height: 160px;
+  position: absolute;
+  left: 50%;
+}
+
+.footer-content ul{
+  text-align: center;
+}
+
+/*faq etc*/
+.list{
+  padding: 0;
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-  }
+}
+
+.list li{
+  width: auto;
+  list-style-type:none;
+  padding: 7px;
+  position: relative;
+  color: #000;
+
+font-family: Georgia;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  
+}
+
+.list li a{
+  font-family:"Source Serif Pro";
+  font-size: 15px;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.social-icons{
+  text-align: center;
+  padding: 0;
+}
+.social-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+.social-icons i{
+  color: BLACK;
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #4c6044;
+}
+.social-icons i:hover{
+  color: #4c6044;
+}
+.bottom-bar{
+  background: #F9F0E9;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+ border-top: 3px, black;
+}
+.bottom-bar p{
+  color: BLACK;
+  margin: 0;
+  font-size: 16px;
+  padding: 2px;
+
+}
 
 /* text color */
 .required{
@@ -374,7 +632,6 @@ ul {
 }
 
 .comment-section, .related-articles {
-  padding: 10px;
   margin: 150px;
 }
 
@@ -385,6 +642,119 @@ ul {
   margin-bottom: 15px;
   border-bottom: 1px solid #4C6044;
 }
+
+/* comment section */
+
+/* Row for form elements */
+.comment-section .form-row {
+  display: flex;
+  flex-direction: row; /* Align elements horizontally */
+  flex-wrap: wrap; /* Allow elements to wrap */
+  margin-bottom: 10px;
+}
+
+/* Style for each input group */
+.comment-section .input-group {
+  display: flex;
+  flex-direction: column;
+  width: 350px; /* Width of each input field */
+  margin-right: 30px; /* Space between fields */
+}
+
+/* Remove margin for the last input group */
+.comment-section .input-group:last-child {
+  margin-right: 0;
+}
+
+/* Style for labels */
+.comment-section .input-group label {
+  margin-bottom: 5px;
+  font-family: Georgia;
+}
+
+/* Style for input fields and text area */
+.comment-section .form-row input,
+.comment-section .form-row textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #FBF6F2;
+}
+
+/* Full width for textarea */
+.comment-section .form-row textarea {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Styles for the last row in the form */
+.comment-section .form-row:last-child {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for the submit button */
+.comment-section .form-row:last-child button {
+  width: 165px;
+  height: 60px;
+  background-color: #4C6044;
+  color: white;
+  font-family: Vilane;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Styles for individual comments */
+.comment {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+/* Content within comments */
+.comment-content {
+  display: flex;
+  width: 100%;
+}
+
+/* Username in comments */
+.comment-username {
+  font-family: "Source Serif Pro";
+  font-size: 20px;
+  flex-basis: 20%;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+/* Text in comments */
+.comment-text {
+  font-family: Georgia;
+  font-size: 20px;
+  flex-grow: 1;
+}
+
+/* Style for 'View More' button */
+#viewMore {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Style for comments display section */
+#commentsDisplay {
+  margin-bottom: 20px;
+}
+
+
+/* related articles */
 
 .previewImg {
   width: 75%;
