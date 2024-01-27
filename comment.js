@@ -1,28 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var existingComments = [
-        {
-            username: "BumpJoyfulMom",
-            comment: "Beautifully written article that captures the essence of pregnancy - the mix of wonder and challenge, the transformative journey, and the importance of self-care and support."
-        },
-        {
-            username: "ExpectingJourney",
-            comment: "This article offers a poignant depiction of the emotional and physical changes that occur during pregnancy. It admirably focuses on self-care and the strengthening of the partnership, making it an engaging and enlightening read."
-        },
-        {
-            username: "NewLifeCreator",
-            comment: "I really love this. The additional paragraph on nurturing the bond between expectant parents adds a unique and heartwarming dimension to this insightful narrative."
-        }
-    ];
-
-    existingComments.forEach(function(comment) {
-        addComment(comment.username, comment.comment);
-    });
-
     updateViewMoreButton();
 });
 
 document.getElementById('commentForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent the default form submission
 
     var username = document.getElementById('username').value.trim();
     var comment = document.getElementById('comment').value.trim();
@@ -33,7 +14,6 @@ document.getElementById('commentForm').addEventListener('submit', function(event
     }
 
     addComment(username, comment);
-
     document.getElementById('commentForm').reset();
     updateViewMoreButton();
 });
@@ -48,7 +28,7 @@ function addComment(username, comment) {
         </div>`;
 
     var commentsContainer = document.getElementById('commentsDisplay');
-    commentsContainer.insertBefore(commentDisplay, commentsContainer.firstChild);
+    commentsContainer.appendChild(commentDisplay); // Append the new comment
 }
 
 function updateViewMoreButton() {

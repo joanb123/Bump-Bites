@@ -78,6 +78,138 @@
   background-color: #f9f0E9;
 }
 
+/* Additional CSS for the FAQ and Delivery sections */
+
+#helpfaq {
+  width: 787px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #F9F0E9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 10px; /* Add margin to separate answers from questions */
+  padding: 10px 10px 0;
+  text-align: center;
+  text-decoration-line: underline;
+  font-family: "Source Serif Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  
+  
+  }
+  
+  .faqContainer {
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    
+  }
+  
+  .faqColumn,
+  .deliveryColumn {
+    width: 35%; /* Adjust as needed for the left and right columns */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+  
+  .faqBoxes {
+      color: #000;
+      font-family: Georgia;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-left: 10px; /* Add margin to separate answers from questions */
+      padding: 10px 10px 0; /* Adjust padding to remove bottom padding */
+      width: 787px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+   
+  
+      
+  }
+  .faqAnswers {
+  color: #000;
+  font-family: Georgia;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 765px; /
+  display: inline-flex;
+  padding: 23px 0px 34px 22px;
+  justify-content: flex-end;
+  align-items: center;
+  
+  
+  }
+  
+  .deliveryBoxes {
+    background-color: #f9f0E9;
+    margin-bottom: 20px; /* Add margin between boxes */
+    padding: 10px; /* Add padding for better visibility */
+    width: 374px;
+    height: 480px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-family: "Source Serif Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center; /* Center the text */
+    text-decoration-line: underline; /* Underline the title */
+    margin-top: 170px; /* Increase margin to move the box down */
+  }
+  
+  .deliveryAnswers {
+    color: #000;
+    font-family: Georgia;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 10px; /* Add margin to separate answers from questions */
+    text-align: left; /* Align text to the left */
+  }
+  
+  
+  body {
+    background-color: #CDDEBC;
+  }
+  
+  .helpbanner {
+    height: 50px; /* Set height to 50px */
+    padding: 10px; /* Add padding for better visual appearance */
+    background: #4C6044;
+    color: #FBF6F2;
+    text-align: center;
+    font-family: "Source Serif Pro";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .bottombanner {
+    width: 398px;
+    height: 101px;
+    background-color: #4C6044;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 4px;
+    color: #FBF6F2;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px; /* Add margin to separate from the content above */
+    flex-shrink: 0;
+  }
+  
+
 /*Contact Us*/
 /* Title*/
 #contactUs{
@@ -322,72 +454,51 @@
 
 /* comment section */
 
-/* Row for form elements */
-.comment-section .form-row {
-  display: flex;
-  flex-direction: row; /* Align elements horizontally */
-  flex-wrap: wrap; /* Allow elements to wrap */
-  margin-bottom: 10px;
-}
-
-/* Style for each input group */
-.comment-section .input-group {
-  display: flex;
-  flex-direction: column;
-  width: 350px; /* Width of each input field */
-  margin-right: 30px; /* Space between fields */
-}
-
-/* Remove margin for the last input group */
-.comment-section .input-group:last-child {
-  margin-right: 0;
-}
-
-/* Style for labels */
-.comment-section .input-group label {
-  margin-bottom: 5px;
-  font-family: Georgia;
-}
-
-/* Style for input fields and text area */
-.comment-section .form-row input,
-.comment-section .form-row textarea {
+.comment-section input, .comment-section textarea {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
   background-color: #FBF6F2;
 }
 
-/* Full width for textarea */
-.comment-section .form-row textarea {
-  width: 100%;
-  margin-top: 10px;
+.comment-section .form-row {
+  display: flex;
+  justify-content: start; /* Align items to the start */
+  margin-bottom: 10px;
 }
 
-/* Styles for the last row in the form */
-.comment-section .form-row:last-child {
-  justify-content: center;
+.comment-section .input-group {
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-right: 15px; /* Space between username and email fields */
 }
 
-/* Style for the submit button */
-.comment-section .form-row:last-child button {
-  width: 165px;
-  height: 60px;
-  background-color: #4C6044;
+.comment-section .input-group:last-child {
+  margin-right: 0; /* No margin on the right for the last input group */
+}
+
+/* Set explicit widths for the username and email input fields */
+.comment-section .input-group input {
+  width: calc(50% - 7.5px); /* Adjust width to account for the margin */
+}
+
+.comment-section .form-row textarea {
+  width: 100%; /* Full width of the container */
+}
+
+.comment-section .form-row button {
+  white-space: nowrap;
+  padding: 10px 20px;
+  background-color: #4CAF50;
   color: white;
-  font-family: Vilane;
   border: none;
-  border-radius: 10px;
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 24px;
-  margin-top: 10px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  align-self: center; /* Center button in the form row */
 }
 
-/* Styles for individual comments */
 .comment {
+  background-color: transparent;
   padding: 10px;
   margin-top: 10px;
   border-radius: 4px;
@@ -396,38 +507,34 @@
   gap: 10px;
 }
 
-/* Content within comments */
 .comment-content {
   display: flex;
   width: 100%;
 }
 
-/* Username in comments */
 .comment-username {
-  font-family: "Source Serif Pro";
+  font-family: 'Georgia', serif;
   font-size: 20px;
   flex-basis: 20%;
   flex-shrink: 0;
   font-weight: bold;
 }
 
-/* Text in comments */
 .comment-text {
-  font-family: Georgia;
-  font-size: 20px;
   flex-grow: 1;
 }
 
-/* Style for 'View More' button */
 #viewMore {
   background-color: #007bff;
   color: white;
   border-color: #007bff;
+  display: none; /* Initially hidden */
+  margin-top: 10px;
+  align-self: center; /* Center the button */
 }
 
-/* Style for comments display section */
 #commentsDisplay {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 
