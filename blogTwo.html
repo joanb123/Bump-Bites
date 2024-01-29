@@ -44,7 +44,45 @@
 
     <div class="comment-section">
         <h2>Comments</h2>
-        <!-- Comment form or comment display area -->
+        <div id="commentsDisplay">
+            <div class="comment">
+                <div class="comment-content">
+                    <div class="comment-username"><strong>GratefulJourneyer</strong></div>
+                    <div class="comment-text">This blog resonates with me so much. Currently navigating the first trimester, and it's like stepping into uncharted waters. The tips on sharing the news and listening to your body are spot-on. Grateful for these insights as I embrace this transformative journey!</div>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-content">
+                    <div class="comment-username"><strong>WellnessExplorer</strong></div>
+                    <div class="comment-text">Such a timely read! The physical changes during the first trimester are hitting me, and your tips on self-care are gold. Listening to my body has become my mantra, and it's making a world of difference. Thanks for the encouragement and guidance!</div>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-content">
+                    <div class="comment-username"><strong>NavigatingWithLove</strong></div>
+                    <div class="comment-text">Reading this brought back memories of my own first trimester. The emotional rollercoaster can be intense, but communication with your partner is a game-changer. Creating that supportive space is so crucial. Wishing all the expectant parents out there a beautiful journey ahead!</div>
+                </div>
+            </div>
+        </div>
+        <button id="viewMore" style="display: none;">View More</button>
+        <form id="commentForm" class="comment-form">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email2">Email:</label>
+                    <input type="email" id="email2" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <textarea id="comment" placeholder="Insert a comment" required></textarea>
+            </div>
+            <div class="form-row">
+                <button type="submit">POST</button>
+            </div>
+        </form>
     </div>
 
     <div class="related-articles">
@@ -61,5 +99,6 @@
             </div>
           </div>
     </div>
+    <script src="comment.js"></script>
 </body>
 </html>

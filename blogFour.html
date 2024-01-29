@@ -40,8 +40,47 @@
 
     <div class="comment-section">
         <h2>Comments</h2>
-        <!-- Comment form or comment display area -->
+        <div id="commentsDisplay">
+            <div class="comment">
+                <div class="comment-content">
+                    <div class="comment-username"><strong>RadiantMomToBe</strong></div>
+                    <div class="comment-text">This article speaks to my heart. Currently embracing the changes of my first pregnancy, and the tips on body positivity and self-care are exactly what I needed to hear. 'A Journey of Self-Love and Beauty Within' indeed. Grateful for this empowering perspective!</div>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-content">
+                    <div class="comment-username"><strong>SupportivePartner</strong></div>
+                    <div class="comment-text">As an expectant dad, reading this resonated deeply. It's given me a better understanding of the emotional and physical changes my partner is going through. The emphasis on celebrating the journey and practicing self-reflection is something we'll navigate together. Thank you for shedding light on this beautiful journey.</div>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-content">
+                    <div class="comment-username"><strong>ExperiencedMom</strong></div>
+                    <div class="comment-text">Having been through pregnancy three times, embracing the changing body is a powerful and ongoing process. This article beautifully captures the essence of self-love during this transformative time. To all expectant moms, you're creating life—embrace the journey and the beautiful changes it brings!</div>
+                </div>
+            </div>
+        </div>
+        <button id="viewMore" style="display: none;">View More</button>
+        <form id="commentForm" class="comment-form">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email2">Email:</label>
+                    <input type="email" id="email2" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <textarea id="comment" placeholder="Insert a comment" required></textarea>
+            </div>
+            <div class="form-row">
+                <button type="submit">POST</button>
+            </div>
+        </form>
     </div>
+
 
     <div class="related-articles">
         <h2>Related Articles</h2>
@@ -57,5 +96,6 @@
             </div>
           </div>
     </div>
+    <script src="comment.js"></script>
 </body>
 </html>

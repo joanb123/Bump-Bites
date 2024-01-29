@@ -470,16 +470,12 @@
 .comment-section .input-group {
   display: flex;
   flex-direction: column;
-  margin-right: 15px; /* Space between username and email fields */
+  width: 350px;
+  margin-right: 15px;
 }
 
 .comment-section .input-group:last-child {
   margin-right: 0; /* No margin on the right for the last input group */
-}
-
-/* Set explicit widths for the username and email input fields */
-.comment-section .input-group input {
-  width: calc(50% - 7.5px); /* Adjust width to account for the margin */
 }
 
 .comment-section .form-row textarea {
@@ -488,12 +484,14 @@
 
 .comment-section .form-row button {
   white-space: nowrap;
+  width: 165px;
+  height: 45px;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #4C6044;
+  font-family: vilane;
   color: white;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  border-radius: 10px;
   align-self: center; /* Center button in the form row */
 }
 
@@ -525,16 +523,18 @@
 }
 
 #viewMore {
-  background-color: #007bff;
+  background-color: #4C6044;
   color: white;
-  border-color: #007bff;
+  font-family: vilane;
+  border-radius: 10px;
   display: none; /* Initially hidden */
   margin-top: 10px;
-  align-self: center; /* Center the button */
+  margin-bottom: 10px;
+  padding: 10px 20px;
 }
 
 #commentsDisplay {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 

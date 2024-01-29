@@ -37,8 +37,47 @@
 
     <div class="comment-section">
         <h2>Comments</h2>
-        <!-- Comment form or comment display area -->
+        <div id="commentsDisplay">
+            <div class="comment">
+                <div class="comment-content">
+                    <div class="comment-username"><strong>GratefulMomToBe</strong></div>
+                    <div class="comment-text">This article beautifully captures the essence of prenatal care! Currently navigating my first pregnancy, and the emphasis on monitoring both baby and maternal health resonates with me. Learning so much about nutrition and preparing for labor. Grateful for these insights as I embark on this incredible journey!</div>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-content">
+                    <div class="comment-username"><strong>HealthFocusedDad</strong></div>
+                    <div class="comment-text">As an expectant dad, I can't stress enough how crucial prenatal care has been for both of us. The regular check-ups provide reassurance, and the educational aspects have made us feel more confident about what lies ahead. This article perfectly encapsulates the importance of this essential care. Kudos!</div>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-content">
+                    <div class="comment-username"><strong>ExperiencedParentVoice</strong></div>
+                    <div class="comment-text">Having been through two pregnancies, I can attest to the significance of prenatal care. It's not just about health check-ups; it's a holistic approach that supports parents every step of the way. The emphasis on nutrition and preparing for labor is spot-on. Fantastic read for expectant parents!</div>
+                </div>
+            </div>
+        </div>
+        <button id="viewMore" style="display: none;">View More</button>
+        <form id="commentForm" class="comment-form">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email2">Email:</label>
+                    <input type="email" id="email2" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <textarea id="comment" placeholder="Insert a comment" required></textarea>
+            </div>
+            <div class="form-row">
+                <button type="submit">POST</button>
+            </div>
+        </form>
     </div>
+
 
     <div class="related-articles">
         <h2>Related Articles</h2>
@@ -54,5 +93,6 @@
             </div>
           </div>
     </div>
+    <script src="comment.js"></script>
 </body>
 </html>
