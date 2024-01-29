@@ -43,7 +43,7 @@
     justify-content: center;
   }
 
-/*termsAndCo and privacyPolicy*/
+/*termsAndCo, privacyPolicy, questions*/
 .termsAndCoBody {
   background-color: #CDDEBC;
   font-family: Georgia;
@@ -63,6 +63,113 @@
 
 .termsAndCoFont{
   font-family: "Source Serif Pro";
+}
+
+.questionsFont {
+  font-family: "Source Serif Pro";
+  text-align: center;
+  color: #4C6044;
+  font-size: 65px;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.questionsText {
+  text-align: center;
+  font-size: 18px;
+}
+
+.h_line {
+  width:100%; height:2px; background: #000;
+}
+
+.questionsBtn {
+  display: flex;
+  justify-content: right;
+}
+
+button {
+  width: 200px;
+  height: 65px;
+  padding: 10px 20px;
+  background-color: #4C6044;
+  font-family: vilane;
+  font-size:25px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* questionsResult*/
+
+.questionsBody, .questionsHtml {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+.top-half {
+  background-color: #7D8F70;
+  height: 50%;
+}
+
+.bottom-half {
+  background-color: #CDDEBC;
+  height: 50%;
+}
+
+.center-box {
+  width: 1100px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F9F0E9;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.questionsText2 {
+  text-align: center;
+  font-size: 35px;
+  display: inline;
+}
+
+.questionsText3 {
+  text-align: center;
+  font-size: 35px;
+  color:#4C6044;
+  display: inline;
+}
+
+#buyNow {
+  width: 280px;
+  height: 60px;
+  background-color: #4C6044;
+  color: white;
+  font-family: Vilane;
+  font-size: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 55px;
+  margin-bottom: 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.radio-buttons {
+  margin-top: 10px;
+}
+
+.radio-buttons input[type="radio"] {
+  margin-right: 5px;
+}
+
+.radio-buttons label {
+  margin-right: 15px;
 }
 
 /*FAq*/
@@ -512,7 +619,7 @@
 
 .comment-username {
   font-family: 'Georgia', serif;
-  font-size: 20px;
+  font-size: 10px;
   flex-basis: 20%;
   flex-shrink: 0;
   font-weight: bold;
