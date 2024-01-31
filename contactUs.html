@@ -15,72 +15,61 @@
         Contact Us!
     </h1>
 
-<body>
+<body class="commonBackground"> <!--Apply common background-->
     <!--contact email with link-->
-    <address class="emailLink"> 
+    <address class="emailLink">
         Need to get in touch with us? Send us a message below or email us at  
         <a href="mailto:BumpBites@gmail.com"> BumpBites@gmail.com
             </a>
     </address>
 
     <br>
-    
-<!--Forms-->
+    <!--Forms-->
+    <!--This is to connect to PHP when created in Module 6-->
+    <form action="/initialSignIn.php">
 
+    <!--Contact Us Big Container-->
+    <div class="contactContainer">
+        <!-- Container forms for user to input their information-->
+        <div class="contactContainer2">
+            <!--First Name-->
+            <label for="nameFirst" class="contactTypography">First Name *</label>
+            <br>
+            <input type="text" id="firstName" name="firstName">
+            <!--break for spacing in between entry boxes-->
+            <br>
+            <br>
+            <!--Last Name-->
+            <label for="nameLast" class="contactTypography">Last Name*</label>
+            <br>
+            <input type="text" id="lastName" name="lastName">
+                <br>
+                <br>
+            <!--Email address-->
+            <label for="email" class="contactTypography">Email*</label>
+            <br>
+            <input type="email" id="email" name="email">
+            <br>
+            <br>
+            <!--User Message-->
+            <label for="text" class="contactTypography">Message *</label>
+            <br>
+            <input type="text" id="messageBox" name="messageBox">
+            <br>
+            <br>
+            <!--Submit Button-->
+            <button type="submit" id="sendMessage" value="SEND MESSAGE">
+                SEND MESSAGE
+            </button>
+        </div>
+    </div>
 
-<!--This is to connect to PHP when created in Module 6-->
-<form action="/initialSignIn.php">
-
-    <!--Forms for user to input their information-->
-    <!--*****Changed from fullname Only to both First and Last name****-->
-    <!--First Name-->
-        <label for="nameFirst">First Name *</label>
-        
-        <br>
-        <input type="text" id="firstName" name="firstName">
-    
-    
-    
-    <!--break for spacing in between entry boxes-->     
-        <br>  
-        <br>
-        
-    <!--Last Name-->
-    <label for="nameLast">Last Name*</label>
-    <br>
-    <input type="text" id="lastName" name="lastName">
-    
-        <br>
-        <br>
-
-    <!--Email address-->
-    <label for="email">Email Address*</label>
-    <br>
-    <input type="email" id="email" name="email">
-    <br>
-    <br>
-
-    <!--User Message-->
-    <label for="text">Message *</label>
-    <br>
-    <input type="text" id="messageBox" name="messageBox">
-
-    <br>
-    <br>
-
-    <!--Submit Button-->
-    <button id="sendMessage" type="submit" value="Submit">
-        <p>
-
-    <!--Change path of Send Message to once PHP is created-->
-    <address class id="sendMessageText">
-        <a href="index.html">SEND MESSAGE
-        </a>
-    </address>
-
-    </p>
-    </button>
-
-    <div class="greenSideRectangle"></div>
-
+    <!--Right Side Green Rectangle-->
+    <div class="greenSideRectangle">
+        <div class="image-container">
+            <img class="logoImageRight" src="imageAssets/favIcon.png" alt="green logo woman holding baby">
+        </div>
+    </div>
+    </form>
 </body>
+</html>

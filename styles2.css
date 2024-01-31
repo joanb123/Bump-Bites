@@ -118,6 +118,7 @@ marquee{
 }
 */
 
+/* Navbar and Footer */
 /* nav container */
 .nav-content{
   width: 60.3%;
@@ -180,8 +181,9 @@ text-align: center;
   padding: 5px;
 }
 .profile-icons i{
-  color: BLACK;
+  color: #4c6044;
   font-size: 25px;
+  margin-right: 15px;
 }
 
 a{
@@ -275,7 +277,7 @@ text-align: left;
 
 .list li a{
   font-family: Georgia;
-  font-size: 12px;
+  font-size: 15px;
   padding-top: 20px;
   position: relative;
   text-decoration: none;
@@ -297,8 +299,8 @@ text-align: left;
   padding: 5px;
 }
 .social-icons i{
-  color: BLACK;
-  font-size: 35px;
+  color: #4c6044;
+  font-size: 45px;
   padding: 2px;
   text-align: center;
 }
@@ -325,8 +327,10 @@ a:hover{
   margin: 0;
   font-size: 16px;
   padding: 2px;
+  font-family: Georgia;
 
 }
+
 
 /* Tell Us More page */
 /* Big container */

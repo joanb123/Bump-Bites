@@ -10,30 +10,37 @@
     <!--linking CSS-->
     <link rel="stylesheet" href="styles.css">
 
-    <!--Heading of the Contact Us Page-->
-    <h1 class id="contactUs">
+    <body class="commonBackground"> <!--Apply common background-->
+        <!--Heading of the Contact Us Page-->
+        <h1 class id="contactUs">
         Contact Us!
-    </h1>
+        </h1>
+        <!--Big Content Container on the left-->
+        <div class="contactContainer">
+            <!--Another Container-->
+            <div class="confirmationContainer">
+                <!--checkmark image placeholder-->
+                <img id="checkmark" src="imageAssets/checkmark.png" alt="checkmark">
 
-<body>
-    <!--checkmark image placeholder-->
-    <img id="checkmark" src="/imageAssets/Color2.png" alt="checkmark">
+                <!--Confirmation Text-->
+                <h3 id="confirmationMessage">Your message has been sent! 
+                    <br>
+                    Our team will reply to your <br>message shortly.
+                </h3>
 
-
-    <!--Confirmation Text-->
-    <h3 id="confirmationMessage">Your message has been sent! Our team will reply to your message shortly.
-    </h3>
-
-    <!--Return Home Button Link-->
-     <button id="returnHome" type="submit" value="Submit">
-     <p>
-    
-    <!--Returns to homepage when clicked-->
-    <a href="index.html">
-        Return Home
-        </a>
-        </p> 
-        </button>
-
+                <!--Return Home Button Link-->
+                <button id="returnHome" type="submit" value="Submit">
+                    <!--Returns to homepage when clicked-->
+                    <a href="index.html" class="returnHomeText">Return Home</a>
+                </button>
+            </div>
+        </div>
+        <!--Right Side Green Rectangle-->
+        <div class="greenSideRectangle">
+            <div class="image-container">
+                <img class="logoImageRight" src="imageAssets/favIcon.png" alt="green logo woman holding baby">
+            </div>
+        </div>
     </body>
+</html>
 
