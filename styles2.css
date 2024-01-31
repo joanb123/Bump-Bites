@@ -134,7 +134,7 @@ marquee{
 }
 
 /* nav bar */
-header {
+.nav-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -147,19 +147,8 @@ header {
   z-index: 1000;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
-header .logo {
-  color: #4C6044;
-  font-family: "Source Serif Pro";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: normal;
-  text-align: left;
-  padding-top: 15px;
-  text-decoration: none;
-}
 
-header .navbar a {
+.navbar a {
 font-size: 1rem;
 padding: 0 1.2rem;
 color: #040604;
@@ -174,16 +163,10 @@ text-decoration: none;
 text-align: center;
 }
 
-header .navbar a:hover {
+.navbar a:hover {
   color: var(#4c6044);
   transform: scale(1.2);
 }
-
-header .logo:hover {
-  color: var(#4c6044);
-  transform: scale(1.4);
-}
-
 
 /* header icons */
 .profile-icons{
@@ -200,12 +183,15 @@ header .logo:hover {
   color: BLACK;
   font-size: 25px;
 }
+
 a{
   text-decoration: none;
 }
+
 a:hover{
   color: #4c6044;
 }
+
 .profile-icons i:hover{
   color: #4c6044;
 }
@@ -227,7 +213,8 @@ footer{
   background-size: cover;
  
 }
-.container{
+
+.container {
   width: auto;
   margin: auto;
   display: flex;
