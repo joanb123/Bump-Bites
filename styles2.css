@@ -123,6 +123,16 @@ marquee{
   width: 60.3%;
   padding-top: 10px;
 }
+
+/* logo in the navbar */
+.mainLogo {
+  position: fixed;
+  height: auto;
+  left: 3px;
+  width: 195px;
+  padding-left: 35px;
+}
+
 /* nav bar */
 header {
   position: fixed;
@@ -331,5 +341,158 @@ a:hover{
 
 }
 
+/* Tell Us More page */
+/* Big container */
+.bigContainer{
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+/* Title*/
+#tellUsMore{
+  width: 400px;
+  height: 103px;
+  flex-shrink: 0;
+  color: #4C6044;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Source Serif Pro";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-left: 200px;
+}
 
+/* Have account subtitle */
+.haveAccount{
+  color: #000;
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #75975E;
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-align: center;
+}
+
+/* Required */
+.required{
+  color: #EA2929;
+  font-family: Georgia;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Form Container */
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Label Styling */
+.label{
+  color: #000;
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Label Typography */
+.labelTypography{
+  color: #000;
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Input Grid Container */
+.inputGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  margin: 20px;
+}
+
+/* Form Boxes */
+#expectedDue, #trimesterOne, #trimesterTwo, #trimesterThree{
+  width: 349px;
+  height: 65px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  border: 2px solid #4C6044;
+  background: #FBF6F2;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Dietary Box */
+#dietary{
+  width: 779px;
+  height: 65px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  border: 2px solid #4C6044;
+  background: #FBF6F2;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Disclaimer Info */
+.disclaimerInfo{
+  width: 810px;
+  color: #000;
+  font-family: Georgia;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  margin-left: 130px;
+}
+
+/* Submit Button */
+.submit{
+  width: 352px;
+  height: 82px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  background: #4C6044;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 236px;
+  height: 59px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Vilane;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+/* Disclaimer Info */
+.disclaimerInfo{
+  width: 800px;
+  color: #000;
+  font-family: Georgia;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 100px;
+  
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image" href="imageAssets/favIcon.png">
+</head>
+
+<body class="shoppingBody">
+    <div class="shoppingContainer">
+        <div class="shopping-cart">
+            <h1>Shopping Cart</h1>
+            <hr>
+            <p class="cartText">Your shopping cart is empty!</p>
+            <h2>Gift Options</h2>
+            <hr>
+            <label>
+                <input type="checkbox" id="giftOption"> Is this a gift? Add a message:
+            </label>
+            <textarea id="giftMessage" placeholder="Enter a special message here"></textarea>
+            <button type="button" id="saveMessage">SAVE</button>
+        </div>
+        <div class="order-summary">
+            <p class="cartText2">*By placing your order, you agree to the <a href="helpPage.html">Delivery Terms</a></p>
+            <h3>Order Summary:</h3>
+            <div class="order-summary-box"></div>
+            <button type="button" id="checkoutBtn">CHECKOUT</button>
+        </div>
+    </div>
+</body>
+
+</html>

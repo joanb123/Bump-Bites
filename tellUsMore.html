@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang ="en">
+<html lang="en">
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width", initial-scale="1">
@@ -8,93 +8,86 @@
     <link rel="icon" type="image" href="imageAssets/favIcon.png">
 
     <!--linking CSS-->
-    <link rel="stylesheet" href="styles.css">
-
-
+    <link rel="stylesheet" href="styles2.css">
 
 <body>
-<!--Tell Us more Heading-->
-    <h1 id="tellUsMore">
-         Tell Us More!
-        </h1>
 
-<!--Link to Login Page-->
-<p class="haveAccount">Already have an account? <a href="signIn.html">Login Here!</a></p>
+<!-- Big Container -->
+<div class="bigContainer">
 
-<p class="required">* Required Entry *</p>
+    <!--Tell Us more Heading-->
+    <h1 id="tellUsMore">Tell Us More!</h1>
 
+    <!--Link to Login Page-->
+    <p class="haveAccount">Already have an account? <a href="signIn.html">Login Here!</a></p>
 
+    <p class="required">* Required Entry *</p>
 
-<!--Forms-->
+    <!--Forms-->
 
-<!--This is to connect to PHP when created in Module 6-->
-<form action="/initialSignIn.php">
+    <!--This is to connect to PHP when created in Module 6-->
+    <!-- Form Container -->
+    <form action="/initialSignIn.php" class="formContainer">
 
-<!--Forms for user to input their information-->
-<!--Expected Due Date-->
+    <!--Forms for user to input their information-->
+    <!-- Form Grid Container -->
+    <div class="inputGrid">
+        <!--Expected Due Date-->
+        <div class="expectedBox">
+            <label for="expectedDue" class="labelTypography">Expected Due Date *</label>
+            <br>
+            <input type="date" id="expectedDue" name="expectedDue">
+        </div>
 
-    <label for="expectedDue">Expected Due Date *</label>    
-        <br>
-    <input type="date" id="expectedDue" name="expectedDue">
+        <!--Trimester 1-->
+        <div class="trimester1">
+            <label for="trimesterOne" class="labelTypography">Trimester 1 *</label>
+            <br>
+            <input type="date" id="trimesterOne" name="trimesterOne">
+        </div>
+
+        <!--Trimester 2-->
+        <div class="trimester2">
+            <label for="trimesterTwo" class="labelTypography">Trimester 2 *</label>
+            <br>
+            <input type="date" id="trimesterTwo" name="trimesterTwo">
+        </div>
+
+        <!--Trimester 3-->
+        <div class="trimester3">
+            <label for="trimesterThree" class="labelTypography">Trimester 3 *</label>
+            <br>
+            <input type="date" id="trimesterThree" name="trimesterThree">
+        </div>
+    </div>
+
+    <!--Dietary Restrictions-->
+    <label for="dietary" class="labelTypography">Dietary Restrictions:</label>
+    <br>
+    <input type="text" id="dietary" name="dietary">
 
     <br>
     <br>
 
-<!--Trimester 1-->
+    <!--Disclaimer-->
+    <h4 class="disclaimer">Disclaimer:</h4>
 
-<label for="trimesterOne">Trimester 1 *</label>    
-<br>
-<input type="date" id="trimesterOne" name="trimesterOne">    
-
-<br>
-<br>
-
-<!--Trimester 2-->
-
-<label for="trimesterTwo">Trimester 2 *</label>    
-<br>
-<input type="date" id="trimesterTwo" name="trimesterTwo"> 
-
-<br>
-<br>
-
-<!--Trimester 3-->
-
-<label for="trimesterThree">Trimester 3 *</label>    
-<br>
-<input type="date" id="trimesterThree" name="trimesterThree">  
-
-<br>
-<br>
-
-    
-<!--Dietary Restrictions-->
-<label for="dietary">Dietary Restrictions:</label>
-<br>
-<input type="text" id="dietary" name="dietary">
-
-<br>
-<br>
-
-<!--Disclaimer-->
-<h4 class="disclaimer">Disclaimer:</h4>
-
-<h5 class="disclaimerInfo">Please be aware that the food items 
-    may contain or come into contact with nuts or nut-based ingredients. 
-    Additionally, some of the items may contain sugar. It's crucial to 
-    exercise caution and verify ingredient lists and labels, particularly 
-    if you have allergies, dietary restrictions, or specific health concerns. 
-    Always follow recommended safety measures and dietary advice, and consult 
-    with professionals as needed. If you are uncertain about the ingredients 
-    in a food product or if you have allergies or dietary restrictions, 
+    <h5 class="disclaimerInfo">Please be aware that the food items
+    may contain or come into contact with nuts or nut-based ingredients.
+    Additionally, some of the items may contain sugar. <br> It's crucial to
+    exercise caution and verify ingredient lists and labels, particularly
+    if you have allergies, dietary restrictions, or specific health concerns.
+    Always follow recommended safety measures and dietary advice, and consult
+    with professionals as needed.<br>If you are uncertain about the ingredients
+    in a food product or if you have allergies or dietary restrictions,
     it is recommended to consult with a healthcare professional or allergist
-     for personalized guidance and to ensure your safety and health.</h5>
+        for personalized guidance and to ensure your safety and health.</h5>
 
-<!--Submit Button for Form-->
-<input class="submit" type="submit" value="SUBMIT">
+    <!--Submit Button for Form-->
+    <input class="submit" type="submit" value="SUBMIT">
 
-</form>
-
+    </form>
+</div>
 
 </body>
 

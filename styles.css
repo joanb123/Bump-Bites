@@ -5,7 +5,9 @@
 
 /*About us*/
 /*text color*/
-
+.aboutUsbg{
+  background-color: #F9F0E9;
+}
 #aboutUs{
     background-color: #4c6044;
     display: flex;
@@ -315,7 +317,6 @@ button {
     margin-top: 20px; /* Add margin to separate from the content above */
     flex-shrink: 0;
   }
-  
 
 /*Contact Us*/
 /* Title*/
@@ -898,3 +899,276 @@ button {
   margin-top: 30px;
   margin-left: 10px;
 }
+
+/* shoppingCart */
+.shoppingBody {
+  background-color: #CDDEBC;
+  font-family: "Source Serif Pro";
+  margin: 0;
+  padding: 0;
+}
+
+.shoppingContainer {
+  display: flex;
+  padding: 20px;
+}
+
+.shopping-cart {
+  background-color: #F9F0E9;
+  padding: 20px;
+  border-radius: 5px;
+  border-style: solid;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  flex-grow: 2;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+.order-summary {
+  height: 480px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  background-color: #F9F0E9;
+  padding: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.order-summary-box {
+  width: 300px; 
+  height: 300px;
+  background-color: white;
+  margin-right: 0px;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+}
+
+#checkoutBtn {
+  width: 300px;
+  background-color: #4C6044;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#saveMessage {
+  width: 200px;
+  height: 50px;
+  background-color: #4C6044;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cartText {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.cartText2 {
+  font-size: 12px;
+}
+
+/* My Account page */
+.accountBody {
+  background-color: #CDDEBC;
+}
+
+.mainAccountContainer {
+  display: flex;
+}
+
+.myAccount {
+  font-size: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-family: "Source Serif Pro";
+  font-weight: bold;
+
+}
+
+.account-container {
+ height: 100%;
+ position: relative;
+
+}
+
+.account-containerTwo {
+  height: 100%;
+  width: 100%;
+  background: #FBF6F2;
+  box-shadow: #0000;
+  margin-right: 5%;
+  padding-bottom: 15%;
+  box-sizing: border-box; 
+  border: 1px solid #4C6044; 
+  border-radius: 10px;
+} 
+
+.sideBar {
+  background-color:#7D8F70;
+  width:300px; 
+  float:left; 
+  height: 100%;
+  margin: 25px;
+  padding-top: 7px;
+  padding-bottom: 0;
+  box-shadow: #0000;
+}
+
+.sideBar a{
+  margin-left: 4%;
+  display: block;
+  color: white;
+  font-size: 23px;
+  text-decoration: none;
+  border-bottom: #000 solid 1px;
+  font-family: Georgia;
+}
+
+
+.sideBar a:hover {
+  background-color: white ;
+  transition: 0.8s;
+  color: black;
+  border-left: #4C6044 5px solid;
+  margin-left: 1px;
+}
+
+
+
+.personal-info {
+  font-size: 30px;
+  font-family: "Source Serif Pro";
+  margin-left: 32px;
+  padding-top: 15px;
+}
+
+.horizontalInfo {
+ border: 1px solid;
+ background-color: #0000;
+ margin-left: 2px;
+ margin-right: 30px;
+}
+
+.personal-info-form {
+  margin: 35px;
+}
+
+.personal-infoFormOne {
+  font-size: 20px;
+  width:75%;
+  height: 100%;
+  font-family: Georgia;
+  
+}
+
+.personal-info-formOne {
+  border: 2px solid #4C6044;
+  border-radius: 3px;
+  padding: 10px;
+  font-family: Georgia;
+}
+
+/* BUTTON */ 
+.editButton {
+  text-align: right;
+  position: relative;
+}
+.buttonProfile {
+  background-color: #4c6044;
+  color:#ffffff;
+  text-align: right;
+  padding: 15px 17px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: #000;
+  font-family: Vilane;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+  
+.buttonProfile:hover {
+  background-color:#7D8F70;
+  transition: 0.7s;
+}
+  
+/* My Orders page */
+
+.order-box {
+  width: 1160px;
+  height: 220px;
+  background-color: #F9F0E9;
+  margin-top: 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: solid 1px #4C6044;
+}
+
+.order-header {
+  display: flex;
+  background-color: #4C6044;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.order-column {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+}
+
+.order-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.order-content img {
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 90px;
+}
+
+.order-content span {
+  flex-grow: 2;
+  font-size: 20px;
+}
+
+.order-content button {
+  background-color: #4C6044;
+  height: 50px;
+  width: 180px;
+  font-size: 15px;
+  font-family: Vilane;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+

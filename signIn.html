@@ -1,75 +1,68 @@
+
 <!DOCTYPE html>
-
-<html lang ="en">
+<html lang="en">
+<head>
     <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width", initial-scale="1">
-    <!--This is to link the Favicon (need to resize image to see logo better)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is to link the Favicon (need to resize image to see logo better) -->
     <link rel="icon" type="image" href="imageAssets/favIcon.png">
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="styles3.css">
+</head>
 
-    <!--linking CSS-->
-    <link rel="stylesheet" href="styles.css">
+<body class="common-background"> <!-- Apply the common-background class here -->
+    <div class="container">
+        <div class="image-container">
+            <img class="signinimage" src="imageAssets/favIcon.png" alt="green logo woman holding baby">
+        </div>
+        <div class="content-container">
+            <!-- Heading of Sign In on page -->
+            <h1 id="signIn">
+                Sign In
+            </h1>
 
-<!--Heading of Sign In on page-->
-<h1 class id="signIn">
-    Sign In
-</h1>
+            <!-- Disclaimer for areas that are needed to be filled out -->
+            <h3 id="requiredEntry">
+                *Required Entry*
+            </h3>
 
-<!--disclaimer for areas that are needed to be filled out-->
-<h3 class id="*Required Entry">
-    *Required Entry*
-</h3>
+            <!-- Forms -->
+            <!-- This is to connect to PHP when created in Module 6 -->
+            <form action="/initialSignIn.php">
+                <!-- Email form -->
+                <!-- Edit: Did not include filled in textboxes for both Email and Password, instead used Name instead of value -->
+                <label for="email" class="visually-hidden">Email *</label><br>
+                <input type="text" id="email" name="Email" placeholder="Email">
+                <br>
 
-<!--Forms-->
+                <!-- break for spacing in between entry boxes -->
+                <br>
 
-<!--This is to connect to PHP when created in Module 6-->
-<form action="/initialSignIn.php">
+                <!-- Password form -->
+                <!-- Show password function?? -->
+                <label for="pwd" class="visually-hidden">Password *</label>
+                <br>
+                <input type="password" id="pwd" name="pwd" placeholder="Password">
+                <br>
+                <br>
+                 <!-- Link to Forgot Password Page ************** -->
+            <!-- ******Placeholder page until design for forgot password is created-->
+            <p id="forgot"><a href="index.html">Forgot Password?</a></p>
 
-<!--Email form-->
-<!--Edit: Did not include filled in textboxes for both Email and Password, instead used Name instead of value-->
-    <label for="email">Email:</label><br>
-    <input type="text" id="email" name="Email">
-    
-    <br>
+                <!-- Button for Sign In/Submit -->
+                <!-- Placeholder until Sign in page is created***** -->
+                <button id="signIn2" type="submit">
+                    <p>
+                        <a href="index.html">Sign In</a>
+                    </p> 
+                </button>
+            </form>
 
-<!--break for spacing in between entry boxes-->    
-    <br>
-    
-<!--Password form-->
-<!--Show password function??-->
-    <label for="pwd"> Password:</label>
-    
-    <br>
+            <!-- Don't have an account along with link to Sign Up -->
+            <!-- Placeholder until Sign up Page is created -->
+            <p id="dontHaveAccount">Don't have an account? <a href="signUp.html" id="signUpLink">Sign Up Here!</a></p>
 
-    <input type="password" id="pwd" name="pwd">
-    
-    <br>
-    <br>
-
-<!--Button for Sign In/Submit-->
-<!--Placeholder until Sign in page is created*****-->
-
-    <button id="signIn" type="submit">
-        <p>
-            <a href="index.html">Sign In
-
-    </a>
-    </p> 
-    </button>
-
-</form>    
-
-
-<!--Link to Forgot Password Page **************-->
-<!--******Placeholder page until design for forgot password is created-->
-
-    <p><a href="index.html">Forgot Password?</a></p>
-
-
-
-<!--Dont have an account along with link to Sign Up-->
-<!--Placeholder until Sign up Page is created-->
-    <p>Don't have an account? <a href="signUp.html">Sign Up Here!</a></p>
-
-
-    </html>
+        </div>
+    </div>
+</body>
+</html>

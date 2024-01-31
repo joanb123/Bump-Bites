@@ -1,113 +1,105 @@
 <!DOCTYPE html>
 
-<html lang ="en">
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width", initial-scale="1">
-    <!--This is to link the Favicon (need to resize image to see logo better)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is to link the Favicon (need to resize image to see logo better) -->
     <link rel="icon" type="image" href="imageAssets/favIcon.png">
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="styles3.css">
+</head>
 
-    <!--linking CSS-->
-    <link rel="stylesheet" href="styles.css">
+<body class="common-background">
+    <!-- Apply the common-background class here -->
+    <div class="signUpContainer">
+        <!-- Image on the left with a green box underneath -->
+        <div class="signUpImageContainer">
+            <img class="signUpImage" src="imageAssets/favIcon.png" alt="green logo woman holding baby">
+            <div class="green-box"></div>
+        </div>
 
-    <!--Heading of the Sign Up Page-->
-    <h1 class id="signUp">
-        Sign Up
-    </h1>
+        <div class="signUpContentContainer">
+            <!-- Heading of the Sign Up Page -->
+            <h1 id="signUpHeading">
+                Sign Up
+            </h1>
 
-    <!--disclaimer for areas that are needed to be filled out-->
-    <h3 class id="*Required Entry">
-    *Required Entry*
-    </h3>
+            <!-- Disclaimer for areas that are needed to be filled out -->
+            <h3 id="signUpRequiredEntry">
+                *Required Entry*
+            </h3>
 
-
-<!--Forms-->
-
-<!--This is to connect to PHP when created in Module 6-->
-<form action="/initialSignIn.php">
-
-<!--Forms for user to input their information-->
-<!--First Name-->
-    <label for="nameFirst">First Name *</label>
-    
-    <br>
-    <input type="text" id="firstName" name="firstName">
-
-
-
-<!--break for spacing in between entry boxes-->     
-    <br>  
-    <br>
-    
-<!--Last Name-->
-<label for="nameLast">Last Name*</label>
-<br>
-<input type="text" id="lasttName" name="lastName">
-
-    <br>
-    <br>
-
-<!--Email-->
-<label for="email">Email*</label>
-<br>
-<input type="text" id="email" name="email">
-
-    <br>
-    <br>
-
-<!--Confirm Email-->
-<!--****-->
-<label for="confirmEmail">Confirm Email*</label>
-<br>
-<input type="text" id="confirmEmail" name="confirmEmail">
-
-    <br>
-    <br>
-
-<!--Password form-->
-    <label for="pwd"> Password*</label>
-    <br>
-    <input type="password" id="pwd" name="pwd">
-    
-    <br>
-    <br>
-
-<!--Confirm Password form-->
-<label for="confirmPassword"> Confirm Password*</label>
-<br>
-<input type="confirmPassword" id="confirmPassword" name="confirmPassword">
-
-<br>
-<br>
+            <!-- Forms -->
+            <!-- This is to connect to PHP when created in Milestone 6 -->
+            <form action="/initialSignUp.php">
 
 
-<!--Terms and Agreement Radio Button--> 
-<!--Required for Registration-->   
-<!--****Will require linkage to PHP****-->
-
-<input type="checkbox" id="terms" name="terms" value="Terms">
-<label for="terms">Accept Terms and Agreements</label>
-
-<br>
-<br>
-
-<!--Button for Sign Up/Submit-->
-<!--Placeholder until Sign Up page is created*****-->
-
-    <button id="signUp" type="submit" value="Submit">
-        <p>
-            <a href="index.html">Sign Up
-
-    </a>
-    </p> 
-    </button>
-
-</form>    
+               <!-- First Name -->
+<div class="label-input-container">
+    <label for="firstName" class="visually-hidden">Name</label>
+    <div class="name-fields">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+        <!-- Last Name -->
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+    </div>
+</div>
 
 
-<!--Link to Login Page-->
+                <!-- Email -->
+                <label for="email" class="visually-hidden">Email</label>
+                <br>
+                <input type="text" id="email" name="email" placeholder="Email">
+                <br>
+                <br>
 
-<p class="haveAccount">Already have an account? <a href="signIn.html">Login Here!</a></p>
+                <!-- Confirm Email -->
+                <label for="confirmEmail" class="visually-hidden"> Confirm Email</label>
+                <br>
+                <input type="text" id="confirmEmail" name="confirmEmail" placeholder="Confirm Email">
+                <br>
+                <br>
 
-<!--End of Sign Up Page-->
-    </html>
+                <!-- Password form -->
+                <label for="pwd" class="visually-hidden">Password</label>
+                <br>
+                <input type="password" id="pwd" name="pwd" placeholder="Password">
+                <br>
+                <br>
+
+                <br>
+                <br>
+
+                <!-- Confirm Password form -->
+                <label for="confirmPassword" class="visually-hidden">Confirm Password</label>
+                <br>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+                <br>
+                <br>
+                <!-- Terms and Agreement Checkbox -->
+                <!-- Required for Registration -->
+                <input type="checkbox" id="terms" name="terms" value="Terms">
+                <label for="terms">Accept Terms and Agreements</label>
+
+                <br>
+                <br>
+
+                <!-- Button for Sign Up/Submit -->
+                <!-- Placeholder until Sign Up page is created -->
+                <button id="signUpButton" type="submit">
+                    <p>
+                        <a href="index.html">Sign Up</a>
+                    </p>
+                </button>
+            </form>
+
+            <!-- Link to Login Page -->
+            <p class="haveAccount">Already have an account? <a href="signIn.html">Login Here!</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+

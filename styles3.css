@@ -1,0 +1,413 @@
+.common-background {
+    background: #FBF6F2;
+    margin: 0; /* Remove default margin */
+  }
+
+/* Sign in page */
+.container {
+    display: flex;
+  }
+  
+  .image-container {
+    width: 542px;
+    height: 797px;
+    flex-shrink: 0;
+    border-radius: 21px;
+    background: #CDDEBC;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signinimage {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 85px; /* Adjust margin as needed */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  #signIn {
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    color: #4C6044;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Source Serif Pro";
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px; /* Add margin at the bottom for spacing */
+  }
+  
+  #requiredEntry {
+    width: 139px;
+    height: 16px;
+    flex-shrink: 0;
+    color: #EA2929;
+    font-family: Georgia;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px; /* Add margin at the bottom for spacing */
+  }
+  
+  #pwd,
+  #email {
+    width: 545px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    border: 2px solid #4C6044;
+    background: #FBF6F2;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px; /* Add margin at the bottom for spacing */
+    text-align: left; /* Align text to the left */
+    padding-left: 15px; /* Add padding to the left for better spacing */
+  }
+  
+  .visually-hidden {
+    width: 142px;
+    height: 18px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Georgia;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+  
+  label[for="email"],
+  label[for="pwd"] {
+    text-align: left; /* Align text to the left */
+    display: block; /* Ensure it's a block-level element */
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+  
+  #email::placeholder,
+  #pwd::placeholder {
+    color: #9B9797;
+    font-family: Georgia;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-indent: 15px;
+  }
+  
+  #signIn2 {
+    width: 374px;
+    height: 63px;
+    flex-shrink: 0;
+    background: #4C6044;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    display: flex;
+   align-items: center;  Align text;
+   justify-content: center; /* Align text horizontally in the button */
+    margin-right: 185px; /* Adjust the margin to move it to the right */
+    margin-top: 100px; /* Adjust the margin to move it down */
+  }
+  
+  #signIn2 a {
+    color: #FFF;
+    font-family: 'Vilane', sans-serif;
+    font-size: 36px;
+    font-weight: 200;
+    line-height: normal;
+    text-decoration: none; /* Remove underline from the link */
+    margin: 0; /* Remove default margin for the <a> tag */
+  }
+  
+  /* Add the following styles to your existing CSS */
+  
+  #forgot {
+    color: #4C6044; /* Adjust the color as needed */
+    font-family: Georgia;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    position: absolute; /* Set the position to absolute */
+    right: 100px; /* Adjust the right offset as needed */
+    bottom: 170px; /* Adjust the bottom offset to move it up */
+  }
+  
+  
+  p a {
+    color: #75975E;
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  }
+  
+    
+  #dontHaveAccount {
+    /* Your styling for the "Don't have an account?" text */
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    color: #000; /* Adjust the color as needed */
+  }
+  
+  #signUpLink {
+    /* Styling for the "Sign Up Here!" link */
+    color: #75975E;
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-left: 5px; /* Adjust the margin to separate the text and the link */
+  }
+
+
+/* Sign up page */
+body {
+    font-family: Georgia;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+  }
+
+.signUpContainer {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+.signUpImageContainer {
+    width: 542px;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 21px;
+    background: #CDDEBC;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.signUpImage {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  
+.signUpContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 85px;
+    padding: 20px;
+  }
+  
+#signUpHeading {
+    width: 300px;
+    height: 70px;
+    flex-shrink: 0;
+    color: #4C6044;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Source Serif Pro";
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px; /* Add margin at the bottom for spacing */
+  }
+  
+#signUpRequiredEntry {
+    width: 139px;
+    height: 16px;
+    flex-shrink: 0;
+    color: #EA2929;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px; /* Add margin at the bottom for spacing */
+  }
+
+.label-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+  }
+  
+.name-fields {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+#firstName,#lastName {
+    width: 250px;
+    height: 46px;
+    border-radius: 7px;
+    border: 2px solid #4C6044;
+    background: #FBF6F2;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-right: 10px; /* Adjust as needed */
+    text-align: left;
+    padding-left: 15px;
+  }
+  
+#firstName {
+    margin-right: 5px; /* Adjust as needed */
+  }
+  
+  
+.label-input-container, label.visually-hidden::after {
+    content: '*';
+    color: red;
+    margin-left: 5px; /* Adjust the margin as needed for spacing */
+  }
+  
+#email, #confirmEmail, #pwd, #confirmPassword {
+    width: 545px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    border: 2px solid #4C6044;
+    background: #FBF6F2;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px; /* Add margin at the bottom for spacing */
+    text-align: left; /* Align text to the left */
+    padding-left: 15px; /* Add padding to the left for better spacing */
+    margin-top: -100px;
+  }
+  
+#firstName {
+    margin-right: 10px; /* Add margin to separate first name and last name */
+  }
+  
+#lastName {
+    margin-left: 10px; /* Add margin to separate first name and last name */
+  }
+  
+label[for="firstName"], label[for="lastName"], label[for="email"], label[for="confirmEmail"], label[for="pwd"],label[for="confirmPassword"] {
+    text-align: left; /* Align text to the left */
+    display: block; /* Ensure it's a block-level element */
+    margin-bottom: 5px; /* Add margin for spacing */
+  }
+  
+#terms {
+    width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #4C6044;
+  background: #FBF6F2;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+label[for="terms"] {
+  width: 319px;
+  height: 15px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Georgia;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  
+#signUpButton {
+    width: 374px;
+    height: 63px;
+    flex-shrink: 0;
+    background: #4C6044;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px; /* Adjust the margin to move it to the right */
+    margin-top: 100px;
+  }
+
+#signUpButton a {
+    color: #FFF;
+    font-family: 'Vilane', sans-serif;
+    font-size: 36px;
+    font-weight: 200;
+    line-height: normal;
+    text-decoration: none; /* Remove underline from the link */
+    margin: 0; /* Remove default margin for the <a> tag */
+  }
+  
+.haveAccount {
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    color: #000; /* Adjust the color as needed */
+  }
+  
+/* reset password */
+#sendLink {
+    width: 374px;
+    height: 63px;
+    flex-shrink: 0;
+    background: #4C6044;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px; /* Adjust the margin to move it to the right */
+    margin-top: 100px;
+    }
+    
+#sendLink a {
+    color: #FFF;
+    font-family: 'Vilane', sans-serif;
+    font-size: 36px;
+    font-weight: 200;
+    line-height: normal;
+    text-decoration: none; /* Remove underline from the link */
+    margin: 0; /* Remove default margin for the <a> tag */
+    }
+    
+#resetHeader {
+    width: 500px;
+    height: 70px;
+    flex-shrink: 0;
+    color: #4C6044;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Source Serif Pro";
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px; /* Add margin at the bottom for spacing */
+    }
