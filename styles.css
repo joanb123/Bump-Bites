@@ -105,7 +105,7 @@ footer{
   width: 60.3%;
 }
 
-h3{ 
+.footer-text { 
 font-size: 30px;
 margin-bottom: 15px;
 color: #000;
@@ -116,8 +116,8 @@ line-height: normal;
 padding-top: 8px;
 }
 
-h4{
-  color: #4C6044;
+.footer-text2 {
+  color: #000;
   margin-bottom: 15px;
   font-family: "Source Serif Pro";
   font-size: 30px;

@@ -11,7 +11,7 @@ overflow: auto;
 /* The hero image */
 .hero-image {
 /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("imageAssets/bbimage1.png");
+background-image: url("imageAssets/bbimage1.png");
 width: 100vw;
 height: 100vh; 
 background-size: 100% 100%;
@@ -89,13 +89,6 @@ font-weight: 300;
 line-height: normal;
 letter-spacing: 1px;
 }
-
-.button:hover {
-  background-color:#7D8F70;
-  transition: 0.7s;
-}
-
-
 
 body {
   display: flex;
@@ -224,23 +217,22 @@ footer{
 .footer-content{
   width: 60.3%;
 }
-
-h3{ 
-font-size: 30px;
-margin-bottom: 15px;
-color: #000;
-font-family: "Source Serif Pro";
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-padding-top: 8px;
+.footer-text {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: #000;
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-top: 8px;
 }
 
-h4{
-  color: #4C6044;
+.footer-text2 {
+  color: #000;
   margin-bottom: 15px;
   font-family: "Source Serif Pro";
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
