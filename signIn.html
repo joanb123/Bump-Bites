@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Sign In</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- This is to link the Favicon (need to resize image to see logo better) -->
@@ -17,21 +18,22 @@
         </div>
         <div class="content-container">
             <!-- Heading of Sign In on page -->
-            <h1 id="signIn">
-                Sign In
-            </h1>
-
-            <!-- Disclaimer for areas that are needed to be filled out -->
-            <h3 id="requiredEntry">
-                *Required Entry*
-            </h3>
 
             <!-- Forms -->
             <!-- This is to connect to PHP when created in Module 6 -->
-            <form action="/initialSignIn.php">
+            <div class="signInForm">
+                <h1 id="signIn">
+                    Sign In
+                </h1>
+    
+                <!-- Disclaimer for areas that are needed to be filled out -->
+                <h3 id="requiredEntry">
+                    *Required Entry*
+                </h3>
+                <form action="/initialSignIn.php">
                 <!-- Email form -->
                 <!-- Edit: Did not include filled in textboxes for both Email and Password, instead used Name instead of value -->
-                <label for="email" class="visually-hidden">Email *</label><br>
+                <label for="email" class="visually-hidden">Email</label><br>
                 <input type="text" id="email" name="Email" placeholder="Email">
                 <br>
 
@@ -40,27 +42,25 @@
 
                 <!-- Password form -->
                 <!-- Show password function?? -->
-                <label for="pwd" class="visually-hidden">Password *</label>
+                <label for="pwd" class="visually-hidden">Password</label>
                 <br>
                 <input type="password" id="pwd" name="pwd" placeholder="Password">
                 <br>
                 <br>
                  <!-- Link to Forgot Password Page ************** -->
             <!-- ******Placeholder page until design for forgot password is created-->
-            <p id="forgot"><a href="resetPassword.html">Forgot Password?</a></p>
 
                 <!-- Button for Sign In/Submit -->
                 <!-- Placeholder until Sign in page is created***** -->
                 <button id="signIn2" type="button">
-                    <p>
                         <a href="myAccount.html">SIGN IN</a>
-                    </p> 
                 </button>
-            </form>
+                <!--IMPORTANT:CHANGE BUTTON TO SUBMIT WHEN PHP IS CREATED-->
+            </form></div>
 
             <!-- Don't have an account along with link to Sign Up -->
             <!-- Placeholder until Sign up Page is created -->
-            <p id="dontHaveAccount">Don't have an account? <a href="signUp.html" id="signUpLink">Sign Up Here!</a></p>
+            <div id="dontHaveAccount">Don't have an account? <a href="signUp.html" class="signUpLink">Sign Up Here!</a><br><a href="resetPassword.html" class="signUpLink">Forgot Password?</a></div>
 
         </div>
     </div>

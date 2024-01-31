@@ -19,7 +19,7 @@
             <img class="signUpImage" src="imageAssets/favIcon.png" alt="green logo woman holding baby">
             <div class="green-box"></div>
         </div>
-
+        <div id="signUpBigContainer">
         <div class="signUpContentContainer">
             <!-- Heading of the Sign Up Page -->
             <h1 id="signUpHeading">
@@ -33,7 +33,7 @@
 
             <!-- Forms -->
             <!-- This is to connect to PHP when created in Milestone 6 -->
-            <form action="/initialSignUp.php">
+            <div class="signInForm"><form action="/initialSignUp.php">
 
 
                <!-- First Name -->
@@ -45,7 +45,7 @@
         <input type="text" id="lastName" name="lastName" placeholder="Last Name">
     </div>
 </div>
-
+<br>
 
                 <!-- Email -->
                 <label for="email" class="visually-hidden">Email</label>
@@ -67,10 +67,6 @@
                 <input type="password" id="pwd" name="pwd" placeholder="Password">
                 <br>
                 <br>
-
-                <br>
-                <br>
-
                 <!-- Confirm Password form -->
                 <label for="confirmPassword" class="visually-hidden">Confirm Password</label>
                 <br>
@@ -81,22 +77,20 @@
                 <!-- Required for Registration -->
                 <input type="checkbox" id="terms" name="terms" value="Terms">
                 <label for="terms">Accept Terms and Agreements</label>
-
-                <br>
-                <br>
-
                 <!-- Button for Sign Up/Submit -->
                 <button id="signUpButton">
                     <p>
                         <a href="tellUsMore.html">SIGN UP</a>
                     </p>
                 </button>
-            </form>
+                <!--IMPORTANT:CHANGE BUTTON TO SUBMIT WHEN PHP IS CREATED-->
+            </form></div>
 
             <!-- Link to Login Page -->
             <p class="haveAccount">Already have an account? <a href="signIn.html">Login Here!</a></p>
         </div>
     </div>
+</div>
 </body>
 
 </html>

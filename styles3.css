@@ -9,8 +9,8 @@
   }
   
   .image-container {
-    width: 542px;
-    height: 797px;
+    max-width: 100%;
+    max-height: 100%;
     flex-shrink: 0;
     border-radius: 21px;
     background: #CDDEBC;
@@ -20,6 +20,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+    margin: 20px;
   }
   
   .signinimage {
@@ -36,13 +38,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 85px; /* Adjust margin as needed */
-    padding: 20px; /* Add padding for better spacing */
+    margin-left: 300px; 
+    padding: 20px; 
   }
   
   #signIn {
     width: 300px;
     height: 70px;
+    justify-content: center;
     flex-shrink: 0;
     color: #4C6044;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -52,11 +55,13 @@
     font-weight: 700;
     line-height: normal;
     margin-bottom: 10px; /* Add margin at the bottom for spacing */
+    margin-left: 180px;
   }
   
   #requiredEntry {
     width: 139px;
     height: 16px;
+    justify-content: center;
     flex-shrink: 0;
     color: #EA2929;
     font-family: Georgia;
@@ -65,6 +70,7 @@
     font-weight: 400;
     line-height: normal;
     margin-bottom: 10px; /* Add margin at the bottom for spacing */
+    margin-left: 220px;
   }
   
   #pwd,
@@ -111,7 +117,11 @@
     font-weight: 400;
     text-indent: 15px;
   }
-  
+
+  .signInForm {
+    justify-content: center;
+  }
+
   #signIn2 {
     width: 374px;
     height: 63px;
@@ -120,10 +130,12 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     display: flex;
-   align-items: center;  Align text;
-   justify-content: center; /* Align text horizontally in the button */
-    margin-right: 185px; /* Adjust the margin to move it to the right */
-    margin-top: 100px; /* Adjust the margin to move it down */
+    align-items: center; 
+    justify-content: center; /* Align text horizontally in the button */
+    margin-right: 200px; /* Adjust the margin to move it to the right */
+    margin-left: 100px;
+    margin-top: 50px; /* Adjust the margin to move it down */
+    margin-bottom: 50px;
   }
   
   #signIn2 a {
@@ -170,9 +182,11 @@
     font-weight: 400;
     line-height: normal;
     color: #000; /* Adjust the color as needed */
+    text-align: center;
+    margin-right: 85px;
   }
   
-  #signUpLink {
+  .signUpLink {
     /* Styling for the "Sign Up Here!" link */
     color: #75975E;
     font-family: Georgia;
@@ -185,6 +199,7 @@
 
 
 /* Sign up page */
+
 body {
     font-family: Georgia;
     margin: 0;
@@ -192,6 +207,10 @@ body {
     min-height: 100vh;
     display: flex;
   }
+#signUpBigContainer {
+  justify-content: center;
+  margin-left: 200px;
+}
 
 .signUpContainer {
     display: flex;
@@ -199,8 +218,8 @@ body {
   }
   
 .signUpImageContainer {
-    width: 542px;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     flex-shrink: 0;
     border-radius: 21px;
     background: #CDDEBC;
@@ -210,6 +229,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+    margin: 20px;
   }
   
 .signUpImage {
@@ -243,6 +264,7 @@ body {
     font-weight: 700;
     line-height: normal;
     margin-bottom: 10px; /* Add margin at the bottom for spacing */
+    margin-left: 45px;
   }
   
 #signUpRequiredEntry {
@@ -278,6 +300,8 @@ body {
     margin-right: 10px; /* Adjust as needed */
     text-align: left;
     padding-left: 15px;
+    font-family: Georgia;
+    font-size: 16px;
   }
   
 #firstName {
@@ -295,6 +319,8 @@ body {
     width: 545px;
     height: 46px;
     flex-shrink: 0;
+    font-family: Georgia;
+    font-size: 16px;
     border-radius: 7px;
     border: 2px solid #4C6044;
     background: #FBF6F2;
@@ -352,7 +378,7 @@ label[for="terms"] {
     align-items: center;
     justify-content: center;
     margin-left: 100px; /* Adjust the margin to move it to the right */
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
 #signUpButton a {
