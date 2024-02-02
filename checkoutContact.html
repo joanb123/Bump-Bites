@@ -31,25 +31,28 @@
         </ul>
         </div>
   </div>
+  <!--contact information is selected-->
 </header>
-<body class="shoppingBody">
-    <div class="shoppingContainer">
-        <div class="shopping-cart">
-            <h1>Shopping Cart</h1>
-            <hr>
-            <p class="cartText">Your shopping cart is empty!</p>
-            <h2>Gift Options</h2>
-            <hr>
-            <label>
-                <input type="checkbox" id="giftOption"> Is this a gift? Add a message:
-            </label>
-            <textarea id="giftMessage" placeholder="Enter a special message here"></textarea>
-            <button type="button" id="saveMessage">SAVE</button>
+<body class="checkoutBody">
+    <div class="checkoutContainer">
+
+        <div class="selected-box">
+            <h1>Contact Information</h1>
+            <input type="text" id="emailInput" name="emailInput" value="EMAIL"><br>
         </div>
+        <div class="unselected-box1">
+            <h1>Delivery Address</h1>
+        </div>
+        <div class="unselected-box2">
+            <h1>Payment Method</h1>
+        </div>
+        <button type="button" id="orderBtn">PLACE ORDER</button>
+    </div>
+    <div class="rightContainer">
+        <!--OrderSummary-->
         <div class="order-summary">
             <h3>Order Summary:</h3>
             <div class="order-summary-box"></div>
-            <a href="checkoutContact.html"><button type="button" id="checkoutBtn">CHECKOUT</button></a>
             <p class="cartText2">*By placing your order, you agree to the <a href="helpPage.html">Delivery Terms</a></p>
         </div>
     </div>

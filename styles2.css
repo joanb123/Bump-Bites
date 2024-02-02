@@ -10,7 +10,6 @@ overflow: auto;
 
 /* The hero image */
 .hero-image {
-/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
 background-image: url("imageAssets/bbimage1.png");
 width: 100vw;
 height: 100vh; 
@@ -174,7 +173,7 @@ text-align: center;
   padding: 5px;
 }
 .profile-icons i{
-  color: #4c6044;
+  color: #000;
   font-size: 25px;
   margin-right: 15px;
 }
@@ -291,7 +290,7 @@ text-align: left;
   padding: 5px;
 }
 .social-icons i{
-  color: #4c6044;
+  color: #000;
   font-size: 45px;
   padding: 2px;
   text-align: center;
@@ -325,6 +324,9 @@ a:hover{
 
 
 /* Tell Us More page */
+.tellusbg {
+  background-color: #FBF6F2;
+}
 /* Big container */
 .bigContainer{
   max-width: 800px;
@@ -345,6 +347,7 @@ a:hover{
   line-height: normal;
   text-align: center;
   margin-left: 200px;
+  margin-top: 100px;
 }
 
 /* Have account subtitle */
@@ -479,3 +482,13 @@ a:hover{
   margin-right: 100px;
   
 }
+
+
+/*red astrick for tell us more page*/
+.expectedBox label::after {
+  content: " *";
+  color: red;
+}
+
+
+  

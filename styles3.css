@@ -1,9 +1,9 @@
-.common-background {
-    background: #FBF6F2;
-    margin: 0; /* Remove default margin */
-  }
-
 /* Sign in page */
+.common-background {
+  background: #FBF6F2;
+  margin: 0; /* Remove default margin */
+}
+
 .container {
     display: flex;
   }
@@ -437,3 +437,18 @@ label[for="terms"] {
     line-height: normal;
     margin-bottom: 10px; /* Add margin at the bottom for spacing */
     }
+
+    #requiredEntryReset {
+      width: 139px;
+      height: 16px;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #EA2929;
+      font-family: Georgia;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 100px; /* Add margin at the bottom for spacing */
+    }
+  

@@ -11,60 +11,35 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<!-- header section & nav bar -->
-<header class="nav-header">
-  <div class="container">
-    <div class="nav-content">
-    <a href="index.html"><img src="imageAssets/mainLogoImage.png" alt="Bump Bites logo" class="mainLogo"></a>
-  </div>
-  <div class="nav-content">
-    <nav class="navbar">
-      <a href="ourBox.html"> OUR BOX </a>
-      <a href="aboutUs.html"> ABOUT US </a>
-      <a href="blogOne.html"> BLOG </a>
-    </nav>
-  </div>
-  <div class="nav-content">
-      <ul class="profile-icons">
-       <li><a href="signIn.html"><i class="fa-solid fa-user"></i></a></li>
-       <li><a href="shoppingCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-      </ul>
-      </div>
-</div>
-</header>
+
 <body class="accountBody">
-  <!-- header section & nav bar -->
-<header>
-  <div class="container"> 
-
-    <div class="nav-content"> 
-      <a href="index.html"> <img src="imageAssets/mainLogoImage.png" alt="Bump Bites logo"  class="mainLogo"> </a>
-  </div> 
-
-  <div class="nav-content">  
-    <nav class="navbar">
-      <a href="ourBox.html"> OUR BOX </a> 
-      <a href="aboutUs.html"> ABOUT US </a>
-      <a href="blogOne.html"> BLOG </a>
-    </nav>
-  </div>  
-
-  <div class="nav-content">  
-      <ul class="profile-icons">
-       <li><a href="#user"><i class="fa-solid fa-user"></i></a></li>
-       <li><a href="#shopping"><i class="fa-solid fa-cart-shopping"></i></a></li>
-      </ul>
-      </div>
-</div>
-</header>
-
+  <header class="nav-header">
+    <div class="container">
+      <div class="nav-content">
+      <a href="index.html"><img src="imageAssets/mainLogoImage.png" alt="Bump Bites logo" class="mainLogo"></a>
+    </div>
+    <div class="nav-content">
+      <nav class="navbar">
+        <a href="ourBox.html"> OUR BOX </a>
+        <a href="aboutUs.html"> ABOUT US </a>
+        <a href="blogOne.html"> BLOG </a>
+      </nav>
+    </div>
+    <div class="nav-content">
+        <ul class="profile-icons">
+         <li><a href="signIn.html"><i class="fa-solid fa-user"></i></a></li>
+         <li><a href="shoppingCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+        </div>
+  </div>
+  </header>
 <div class="myAccount">
     My Account
 </div>
-<div class="mainAccountContainer"> 
-  
-<div class="account-container"> 
-    <div class="sideBar"> 
+<div class="mainAccountContainer">
+
+<div class="account-container">
+    <div class="sideBar">
         <a href="myAccount.html"> <i class="fa-solid fa-user"></i> Profile </a> <br>
         <a href="myOrdersAccount.html"> <i class="fa-solid fa-box-open"></i> My Orders</a> <br>
         <a href="myAddressAccount.html"> <i class="fa-solid fa-house"></i> Addresses</a> <br>
@@ -78,25 +53,36 @@
 </div>
 </div>
 
-<div class="account-containerTwo"> 
-    <div class="personal-info"> 
-        PAYMENT METHODS  
+<div class="account-containerTwo">
+    <div class="personal-info">
+        PAYMENT METHODS
         <hr class="horizontalInfo">
     </div>
 
-  <div class="personal-info-form"> 
-    <form class="personal-infoFormOne">
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname"><br>
-      <label for="changePass">Change Password:</label><br>
-      <input type="text" id="changePass" name="changePass"><br>
-      <label for="emailInfo">Email:</label><br>
-      <input type="text" id="emailInfo" name="emailInfo"><br> 
-
-      <div class="editButton">
-        <button type="button" class="buttonProfile" value="Submit"> EDIT PERSONAL INFO</button>
+    <div class="payment-form-container">
+      <div class="payment-info-form">
+        <form class="payment-info-form">
+          <div class="card-number-container">
+            <label for="cardnumber">Card Number</label><br>
+            <input type="text" id="cnumb" name="cnumb">
+          </div>
+          <div class="expiration-container">
+            <label for="exmon">Expiration Month</label><br>
+            <input type="text" id="exmon" name="exmon">
+            <label for="exyear">Expiration Year</label><br>
+            <input type="text" id="exyear" name="exyear">
+            <label for="seccode">Security Code</label><br>
+            <input type="text" id="seccode" name="seccode">
+          </div>
+          <div class="name-on-card-container">
+            <label for="nameoncard">Name on Card</label><br>
+            <input type="text" id="nameoncard" name="nameoncard">
+          </div>
+        </form>
+      </div>
+    </div>
+      <div class="mypaymentButton">
+        <button type="button" class="buttonProfile" value="Submit"> ADD NEW PAYMENT METHOD</button>
       </div>
     </form>
 </div>
