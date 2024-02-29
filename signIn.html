@@ -9,6 +9,7 @@
     <link rel="icon" type="image" href="imageAssets/favIcon.png">
     <!-- Linking CSS -->
     <link rel="stylesheet" href="styles3.css">
+    <script src="signin.js"></script>
 </head>
 
 <body class="common-background"> <!-- Apply the common-background class here -->
@@ -30,7 +31,7 @@
                 <h3 id="requiredEntry">
                     *Required Entry*
                 </h3>
-                <form action="/initialSignIn.php">
+                <form action="/signin.php">
                 <!-- Email form -->
                 <!-- Edit: Did not include filled in textboxes for both Email and Password, instead used Name instead of value -->
                 <label for="email" class="visually-hidden">Email</label><br>
@@ -52,8 +53,8 @@
 
                 <!-- Button for Sign In/Submit -->
                 <!-- Placeholder until Sign in page is created***** -->
-                <button id="signIn2" type="button">
-                        <a href="myAccount.html">SIGN IN</a>
+                <button id="signIn2" type="submit">
+                        SIGN IN
                 </button>
                 <!--IMPORTANT:CHANGE BUTTON TO SUBMIT WHEN PHP IS CREATED-->
             </form></div>
