@@ -33,29 +33,57 @@
   </div>
   <!--contact information is selected-->
 </header>
-<body class="checkoutBody">
-    <div class="checkoutContainer">
-
-        <div class="selected-box">
-            <h1>Contact Information</h1>
-            <input type="text" id="emailInput" name="emailInput" value="EMAIL"><br>
+<body class="checkoutbody">
+<div class="checkoutbanner"><strong>Checkout</strong></div>
+<div class="container-fuid checkout-page">
+  <div class="row">
+      <div class="col-md-8">
+        <div class="contact-box">
+          <span>CONTACT INFORMATION</span>
+          <button id="dropdownButton">▼</button>
+          <div id="emailInputField" style="display: none;">
+              <input type="email" placeholder="Email">
+          </div>
+      </div>
+      <div class="contact-box">
+        <span>DELIVERY ADDRESS</span>
+        <button id="addressDropdownButton">▼</button>
+        <div id="addressInputFields" style="display: none;">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="Apt/Ste">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="Zipcode">
+            <label>
+                <input type="checkbox"> Same as billing address
+            </label>
         </div>
-        <div class="unselected-box1">
-            <h1>Delivery Address</h1>
+      </div>
+      <div class="contact-box">
+        <span>PAYMENT METHOD</span>
+        <button id="paymentDropdownButton">▼</button>
+        <div id="paymentInputFields" style="display: none;">
+            <input type="text" placeholder="Card Number">
+            <input type="text" placeholder="Expiration Month">
+            <input type="text" placeholder="Expiration Year">
+            <input type="text" placeholder="Security Code">
+            <input type="text" placeholder="Name on Card">
         </div>
-        <div class="unselected-box2">
-            <h1>Payment Method</h1>
+      </div>
+      <a href="confirmation.html"><button id="placeOrderButton" class="place-order-btn">PLACE ORDER</button></a>
+      </div>
+      <div class="col-md-4">
+        <div class="order-summary2">
+          <h3>Order Summary:</h3>
+          <div class="order-summary-box2"></div>
+          <p class="cartText2">*By placing your order, you agree to the <a href="helpPage.html">Delivery Terms</a></p>
         </div>
-        <button type="button" id="orderBtn">PLACE ORDER</button>
-    </div>
-    <div class="rightContainer">
-        <!--OrderSummary-->
-        <div class="order-summary">
-            <h3>Order Summary:</h3>
-            <div class="order-summary-box"></div>
-            <p class="cartText2">*By placing your order, you agree to the <a href="helpPage.html">Delivery Terms</a></p>
-        </div>
-    </div>
+      </div>
+  </div>
+</div>
+<script src="checkout.js"></script>
 </body>
 <!--FOOTER-->
 <footer>

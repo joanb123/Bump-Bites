@@ -1718,59 +1718,127 @@ height: 66px;
 }
 
 /* Checkout Page */
-.checkoutBody {
+.checkoutbody {
   background-color: #CDDEBC;
-  font-family: "Source Serif Pro";
-  margin: 0;
-  padding: 0;
+  font-family: "Georgia";
 }
 
-.checkoutContainer {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.unselected-box1 {
-  padding: 20px;
-  border-style: solid;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 40px;
-  
-}
-
-.unselected-box2 {
-  padding: 20px;
-  border-style: solid;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 40px;
-  
-}
-.selected-box{
-  background-color: #F9F0E9;
-  padding: 20px;
-  border-radius: 5px;
-  border-style: solid;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 120px;
-  
-}
-
-
-/* checkout Delivery address */
-#orderBtn{
-  width: 350px;
+.checkoutbanner {
   background-color: #4C6044;
   color: white;
+  font-size: 35px;
+  margin-top: 90px;
+  padding: 15px;
+  text-align: center;
+}
+
+.contact-box {
+  background-color: #F9F0E9;
+  border-style: solid;
+  font-family: "Vilane";
+  font-size: 25px;
+  width: 700px;
+  margin-left: 150px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+#dropdownButton {
+  width: 5px;
+  margin-left: 295px;
+  background-color: #F9F0E9;
+  color: #000;
+}
+
+#addressDropdownButton {
+  width: 5px;
+  margin-left: 355px;
+  background-color: #F9F0E9;
+  color: #000;
+}
+
+#paymentDropdownButton {
+  width: 5px;
+  margin-left: 370px;
+  background-color: #F9F0E9;
+  color: #000;
+}
+
+input[type=email] {
+  width: 430px;
+  margin-top: 10px;
+  display: block;
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+#addressInputFields {
+  width: 675px;
+  margin-top: 10px;
+  display: block;
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+#paymentInputFields {
+  width: 675px;
+  margin-top: 10px;
+  display: block;
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+.place-order-btn {
+  background-color: #4C6044;
+  color: white;
+  width: 300px;
   padding: 10px 20px;
+  font-size: 25px;
+  font-family: "Vilane";
+  border: none;
+  display: block;
+  margin-top: 50px;
+  margin-left: 335px;
+  margin-bottom: 100px;
   border-radius: 2px;
-  margin-top: 60px;
-  margin-bottom: 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.order-summary2 {
+  height: 450px;
+  width: 400px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-right: 200px;
+  background-color: #F9F0E9;
+  padding: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.order-summary-box2 {
+  width: 350px; 
+  height: 300px;
+  background-color: white;
+  margin-right: 0px;
+}
+
+/* Confirmation Page */
+.colorBackground {
+  background-color: #F9F0E9;
+  font-family: "Georgia";
+  text-align: center;
+}
+
+.confirmationText {
+  color: #4c6044;
+  margin-bottom: 30px;
+}
+
+.confirmationText2 {
+  margin-bottom: 250px;
+}
+
+.checkmark {
+  margin-top: 250px;
+  margin-bottom: 50px;
 }
