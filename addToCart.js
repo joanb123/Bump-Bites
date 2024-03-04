@@ -2,12 +2,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const addToCartButtons = document.querySelectorAll('.addToCartButton');
     addToCartButtons.forEach((button, index) => {
         button.addEventListener('click', () => {
+            const productText = button.closest('.subscriptionBox').querySelector('.subscriptionBoxText p').innerText;
+            let priceText = productText.split('\n').pop();
+            let price = priceText.trim();
+
+            let priceMatch = price.match(/\$\d+/);
+            if (priceMatch) {
+                price = priceMatch[0];
+            }
+
             const product = {
-                id: index + 1, // Simple ID for demo purposes
+                id: index + 1,
                 title: button.closest('.subscriptionBox').querySelector('.subscriptionBoxTitles').innerText,
-                price: button.closest('.subscriptionBox').querySelector('.subscriptionBoxText p').innerText.split('\n')[2] // Assuming price is always on the third line
+                price: price
             };
             addToCart(product);
+            window.location.href = 'shoppingCart.html';
         });
     });
 
@@ -15,6 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
         let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
         cart.push(product);
         localStorage.setItem('cart', JSON.stringify(cart));
-        alert('Added to cart!');
     }
 });
