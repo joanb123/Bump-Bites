@@ -1,9 +1,9 @@
 <?php
 // Database credentials
-$servername = "localhost"; 
-$username = "username"; 
-$password = "password";
-$dbname = "your_database_name"; 
+$servername = "MariaDB";
+$username = "m6ImAv1H9m";
+$password = "UdKJxGmug4";
+$dbname = "dbm6ImAv1H9m";
 
 // Attempt to connect to the MySQL database
 $conn = new mysqli($servername, $username, $password, $dbname);
