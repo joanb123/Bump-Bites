@@ -1,51 +1,43 @@
 <?php
-$servername = "MariaDB";
-$username = "m6ImAv1H9m";
-$password = "UdKJxGmug4";
-$dbname = "dbm6ImAv1H9m";
+// Database credentials
+$servername = "localhost"; // Adjust according to your server
+$username = "username"; // Your database username
+$password = "password"; // Your database password
+$dbname = "your_database_name"; // Your database name
 
-// Create connection
+// Attempt to connect to the MySQL database
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+// Check the connection
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
 
-// Retrieve form data
-$questionOne = $_POST['questionOne'];
-$questionTwo = $_POST['questionTwo'];
-$questionThree = $_POST['questionThree'];
-$questionFour = $_POST['questionFour'];
-$questionFive = $_POST['questionFive'];
-$questionSix = $_POST['questionSix'];
-$questionSeven = $_POST['questionSeven'];
-$questionEight = $_POST['questionEight'];
-$questionNine = $_POST['questionNine'];
-$questionTen = $_POST['questionTen'];
+// Prepare and bind
+$stmt = $conn->prepare("INSERT INTO quiz_responses (question_one, question_two, question_three, question_four, question_five, question_six, question_seven, question_eight, question_nine, question_ten) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-// Simulate the JavaScript logic for determining the result
-// This should ideally be adjusted according to how you plan to use the result
-$resultCounts = ['sweet' => 0, 'salty' => 0, 'savory' => 0];
-// Example of incrementing: $resultCounts['sweet']++;
+$stmt->bind_param("ssssssssss", $questionOne, $questionTwo, $questionThree, $questionFour, $questionFive, $questionSix, $questionSeven, $questionEight, $questionNine, $questionTen);
 
-// Based on the answers, increment the relevant counters
-// You'll need to add your logic here based on how you want to process the answers
+// Retrieve form data and assign it to variables
+$questionOne = $_POST['questionOne'] ?? 'not answered';
+$questionTwo = $_POST['questionTwo'] ?? 'not answered';
+$questionThree = $_POST['questionThree'] ?? 'not answered';
+$questionFour = $_POST['questionFour'] ?? 'not answered';
+$questionFive = $_POST['questionFive'] ?? 'not answered';
+$questionSix = $_POST['questionSix'] ?? 'not answered';
+$questionSeven = $_POST['questionSeven'] ?? 'not answered';
+$questionEight = $_POST['questionEight'] ?? 'not answered';
+$questionNine = $_POST['questionNine'] ?? 'not answered';
+$questionTen = $_POST['questionTen'] ?? 'not answered';
 
-// Determine the result based on the counts
-arsort($resultCounts); // Sorts the array in reverse order maintaining the keys
-$result = key($resultCounts); // Gets the key of the first element in the array
-
-// Insert into database
-$stmt = $conn->prepare("INSERT INTO questionnaire_responses (question_one, question_two, question_three, question_four, question_five, question_six, question_seven, question_eight, question_nine, question_ten, result) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("sssssssssss", $questionOne, $questionTwo, $questionThree, $questionFour, $questionFive, $questionSix, $questionSeven, $questionEight, $questionNine, $questionTen, $result);
-
+// Execute the prepared statement
 if ($stmt->execute()) {
-  echo "Thank you for completing the questionnaire. Your preferences have been saved.";
+    echo "Thank you for completing the questionnaire. Your responses have been successfully saved.";
 } else {
-  echo "Error: " . $stmt->error;
+    echo "Error: " . $stmt->error;
 }
 
+// Close statement and connection
 $stmt->close();
 $conn->close();
 ?>
