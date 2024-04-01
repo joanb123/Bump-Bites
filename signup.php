@@ -1,6 +1,6 @@
 <?php
 // Updated database connection parameters
-$servername = "MariaDB"; // Typically, MariaDB uses 'localhost' but adjust if it's hosted elsewhere
+$servername = "MariaDB";
 $username = "m6ImAv1H9m";
 $password = "UdKJxGmug4";
 $dbname = "dbm6ImAv1H9m";
