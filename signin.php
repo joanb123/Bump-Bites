@@ -1,55 +1,44 @@
 <?php
-
-$servername = "MariaDB";
+header('Content-Type: application/json');
+$servername = "127.0.0.1";
 $username = "m6ImAv1H9m";
 $password = "UdKJxGmug4";
 $dbname = "dbm6ImAv1H9m";
-
- 
-// Check if form data was sent using POST method
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Retrieve form data from POST request
-    $email = $_POST['email'];
-    $password = $_POST['pwd'];
-    // Validate form data (example: check if email and password are not empty)
-    if (empty($email) || empty($password)) {
-        http_response_code(400); // Bad request
-        echo json_encode(['error' => 'Email and password are required.']);
-        exit; // Stop script execution
-    }
-    // Connect to MySQL database
-    $mysqli = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
-    if ($mysqli->connect_error) {
-        http_response_code(500); // Internal server error
-        echo json_encode(['error' => 'Failed to connect to database.']);
-        exit; // Stop script execution
-    }
-    // Prepare SQL statement to insert data into database (example)
-    $sql = "INSERT INTO users (email, password) VALUES (?, ?)";
-    $statement = $mysqli->prepare($sql);
-    // Bind parameters and execute statement
-    $statement->bind_param('ss', $email, $password);
-    $result = $statement->execute();
-    if ($result) {
-        // Data inserted successfully
-        http_response_code(200); // OK
-        echo json_encode(['success' => true]);
-    } else {
-        // Error inserting data
-        http_response_code(500); // Internal server error
-        echo json_encode(['error' => 'Failed to insert data into database.']);
-    }
-    // Close database connection
-    $mysqli->close();
-} else {
-    // Handle invalid request method
-    http_response_code(405); // Method not allowed
-    echo json_encode(['error' => 'Method not allowed.']);
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die(json_encode(['success' => false, 'message' => 'Connection failed']));
 }
-header('Content-Type: application/json');
-echo json_encode(['success' => 'Your success message here']);
-exit;
-
-
+$email = $_POST['email'] ?? '';
+$password = $_POST['password'] ?? '';
+if (empty($email) || empty($password)) {
+    echo json_encode(['success' => false, 'message' => 'Email and password are required']);
+    exit;
+}
+$sql = "SELECT id, password FROM signUpPage WHERE email = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("s", $email);
+$stmt->execute();
+$result = $stmt->get_result();
+$user = $result->fetch_assoc();
+if ($user && password_verify($password, $user['password'])) {
+    // Success, email and password match
+    echo json_encode(['success' => true]);
+} else {
+    // Failure, invalid login credentials
+    echo json_encode(['success' => false, 'message' => 'Invalid email or password']);
+}
+$conn->close();
 ?>
+
+
+
+
+
+
+
+
+
+
+

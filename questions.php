@@ -1,6 +1,6 @@
 <?php
 // Database credentials
-$servername = "MariaDB";
+$servername = "127.0.0.1";
 $username = "m6ImAv1H9m";
 $password = "UdKJxGmug4";
 $dbname = "dbm6ImAv1H9m";
