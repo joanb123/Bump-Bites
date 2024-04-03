@@ -43,7 +43,7 @@ $sql->bind_param("ssss", $firstName, $lastName, $email, $hashedPassword);
 
 if ($sql->execute() === TRUE) {
     // Redirect user to another page upon successful signup
-    header("Location: questions.html");
+    header("Location: tellUsMore.html");
     exit; // Make sure no other code is executed after redirection
 } else {
     echo "Error: " . $sql->error;
