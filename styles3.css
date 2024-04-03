@@ -315,7 +315,7 @@ body {
     margin-left: 5px; /* Adjust the margin as needed for spacing */
   }
   
-#email, #confirmEmail, #pwd, #confirmPassword {
+#email, #confirmEmail, #password, #confirmPassword {
     width: 545px;
     height: 46px;
     flex-shrink: 0;
