@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const total = subtotal + tax;
 
         const orderSummaryBox = document.querySelector('.order-summary-box');
-        orderSummaryBox.innerHTML = ''; // Clear previous content
+        orderSummaryBox.innerHTML = ''; // Clear previous content before updating
 
         // Add each cart item to the order summary
         cart.forEach(item => {
@@ -38,9 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
-    // Functionality for populating cart items and setting up delete buttons
     function populateCartItems() {
-        document.querySelector('.cartText').innerText = '';
+        cartItemsContainer.innerHTML = ''; // Clear the container before repopulating
         cart.forEach((item, index) => {
             const itemElement = document.createElement('div');
             itemElement.classList.add('cart-item');
@@ -58,18 +57,19 @@ document.addEventListener('DOMContentLoaded', () => {
         updateOrderSummary();
     }
 
-    document.querySelectorAll('.deleteItemBtn').forEach(button => {
-        button.addEventListener('click', function() {
-            const itemIndex = this.getAttribute('data-index');
-            cart.splice(itemIndex, 1);
-            localStorage.setItem('cart', JSON.stringify(cart));
-            cartItemsContainer.innerHTML = ''; // Clear the cart items container
-            if (cart.length > 0) {
-                populateCartItems(); // Repopulate cart items if any remain
-            } else {
+    // Using event delegation for the delete button functionality
+    cartItemsContainer.addEventListener('click', function(event) {
+        if (event.target.className === 'deleteItemBtn') {
+            const itemIndex = parseInt(event.target.getAttribute('data-index'));
+            cart.splice(itemIndex, 1); // Remove the item from the cart
+            localStorage.setItem('cart', JSON.stringify(cart)); // Update local storage
+
+            populateCartItems(); // Repopulate cart items to reflect the current state
+            updateOrderSummary(); // Update the order summary
+
+            if (cart.length === 0) {
                 document.querySelector('.cartText').innerText = 'Your shopping cart is empty!';
             }
-            updateOrderSummary(); // Update the order summary to reflect changes
-        });
+        }
     });
 });
