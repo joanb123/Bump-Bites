@@ -17,16 +17,29 @@ if ($conn->connect_error) {
 $firstName = $conn->real_escape_string($_POST['firstName']);
 $lastName = $conn->real_escape_string($_POST['lastName']);
 $email = $conn->real_escape_string($_POST['email']);
-// Hash the password before storing it
-$password = password_hash($_POST['pwd'], PASSWORD_DEFAULT);
+$confirmEmail = $conn->real_escape_string($_POST['confirmEmail']);
+$password = $conn->real_escape_string($_POST['password']);
+$confirmPassword = $conn->real_escape_string($_POST['confirmPassword']);
 
-// SQL query to insert the user data into the database
-$sql = "INSERT INTO users (firstName, lastName, email, password) VALUES ('$firstName', '$lastName', '$email', '$password')";
+// Check if email and password are confirmed
+if ($email !== $confirmEmail) {
+    die("Emails do not match.");
+}
+if ($password !== $confirmPassword) {
+    die("Passwords do not match.");
+}
 
-if ($conn->query($sql) === TRUE) {
+// Hash the password
+$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+// SQL query to insert the user data into the database using prepared statements
+$sql = $conn->prepare("INSERT INTO users (firstName, lastName, email, password) VALUES (?, ?, ?, ?)");
+$sql->bind_param("ssss", $firstName, $lastName, $email, $hashedPassword);
+
+if ($sql->execute() === TRUE) {
     echo "New record created successfully.";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . $sql->error;
 }
 
 // Close the database connection
