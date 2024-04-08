@@ -30,11 +30,12 @@ $questionEight = $_POST['questionEight'] ?? 'not answered';
 $questionNine = $_POST['questionNine'] ?? 'not answered';
 $questionTen = $_POST['questionTen'] ?? 'not answered';
 
-// Execute the prepared statement
-if ($stmt->execute()) {
-    echo "Thank you for completing the questionnaire. Your responses have been successfully saved.";
+if ($sql->execute() === TRUE) {
+    // Redirect user to another page upon successful signup
+    header("Location: questionsResult.html");
+    exit; // Make sure no other code is executed after redirection
 } else {
-    echo "Error: " . $stmt->error;
+    echo "Error: " . $sql->error;
 }
 
 // Close statement and connection
