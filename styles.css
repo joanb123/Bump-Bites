@@ -1633,6 +1633,38 @@ height: 66px;
   margin-left: 80px;
   }
 
+  .account-info-box1 {
+    width: 600px;
+    height: 500px;
+    background-color: #F9F0E9;
+    border: 2px solid #4C6044;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 70px;
+    margin-right: 20px;
+    margin-top: 100px;
+  }
+  
+  .account-info-box1 p {
+    margin: 0 0 10px 0;
+    font-family: Georgia;
+    font-size: 20px !important;
+  }
+
+  .editButton1 {
+    float: right; /* Example if it's not already positioned to the right */
+    margin-right: 180px; /* Adjust based on your layout needs */
+    margin-top: -250px;
+  }
+  
+  .account-info-box1 img {
+    display: block; /* Ensures the image does not align inline with text */
+    margin: 0 auto 10px; /* Centers the image and adds space below */
+    width: 32%; /* Adjust as necessary */
+    height: auto; /* Maintains aspect ratio */
+    margin-top: 25px;
+  }
+  
 /* My Orders page */
 
 .order-box {
