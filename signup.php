@@ -41,6 +41,9 @@ $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 $sql = $conn->prepare("INSERT INTO signUpPage (firstName, lastName, email, password) VALUES (?, ?, ?, ?)");
 $sql->bind_param("ssss", $firstName, $lastName, $email, $hashedPassword);
 
+setcookie("firstName", $firstName, time() + (86400 * 30), "/"); // Set cookie for 30 days
+header("Location: tellUsMore.html"); // Redirect
+
 if ($sql->execute() === TRUE) {
     // Redirect user to another page upon successful signup
     header("Location: tellUsMore.html");

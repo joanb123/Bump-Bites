@@ -36,55 +36,73 @@
 <body class="checkoutbody">
 <div class="checkoutbanner"><strong>Checkout</strong></div>
 <div class="container-fuid checkout-page">
-  <div class="row">
-      <div class="col-md-8">
-        <div class="contact-box">
-          <span>CONTACT INFORMATION</span>
-          <button id="dropdownButton">▼</button>
-          <div id="emailInputField" style="display: none;">
-              <input type="email" placeholder="Email">
+     <!-- Start of form -->
+     <form action="processCheckout.php" method="post">
+      <div class="row">
+          <div class="col-md-8">
+              <!-- Contact Information Section -->
+              <div class="contact-box">
+                  <span>CONTACT INFORMATION</span>
+                  <button id="dropdownButton" type="button">▼</button>
+                  <div id="emailInputField" style="display: none;">
+                      <input type="email" name="email" placeholder="Email">
+                  </div>
+              </div>
+              <!-- Delivery Address Section -->
+              <div class="contact-box">
+                  <!-- Delivery address fields remain unchanged -->
+                  <div class="contact-box">
+                    <span>DELIVERY ADDRESS</span>
+                    <button id="addressDropdownButton" type="button">▼</button>
+                    <div id="addressInputFields" style="display: none;">
+                        <input type="text" name="first_name" placeholder="First Name">
+                        <input type="text" name="last_name" placeholder="Last Name">
+                        <input type="text" name="address" placeholder="Address">
+                        <input type="text" name="apt_ste" placeholder="Apt/Ste">
+                        <input type="text" name="city" placeholder="City">
+                        <input type="text" name="state" placeholder="State">
+                        <input type="text" name="zipcode" placeholder="Zipcode">
+                        <label>
+                            <input type="checkbox"> Same as billing address
+                        </label>
+                    </div>
+              </div>
+              <!-- Payment Method Section -->
+              <div class="contact-box">
+                  <!-- Payment method fields remain unchanged -->
+                  <div class="contact-box">
+                    <span>PAYMENT METHOD</span>
+                    <button id="paymentDropdownButton" type="button">▼</button>
+                    <div id="paymentInputFields" style="display: none;">
+                        <input type="text" name="card_number" placeholder="Card Number">
+                        <input type="text" name="exp_month" placeholder="Expiration Month">
+                        <input type="text" name="exp_year" placeholder="Expiration Year">
+                        <input type="text" name="security_code" placeholder="Security Code">
+                        <input type="text" name="name_on_card" placeholder="Name on Card">
+                    </div>
+              </div>
+              <!-- Place Order Button -->
+              <a href="confirmation.html" type="button"></a>
+            </div>
+            <div class="col-md-4">
+              <div class="order-summary2">
+                <h3>Order Summary:</h3>
+                <div class="order-summary-box2"></div>
+                <p class="cartText2">*By placing your order, you agree to the <a href="helpPage.html">Delivery Terms</a></p>
+              </div>
+              <!-- Replaced the link with a submit button to ensure form data is submitted -->
+              <button type="submit" id="placeOrderButton" class="place-order-btn">PLACE ORDER</button>
+          </div>
+          <div class="col-md-4">
+              <!-- Order Summary Section remains unchanged -->
           </div>
       </div>
-      <div class="contact-box">
-        <span>DELIVERY ADDRESS</span>
-        <button id="addressDropdownButton">▼</button>
-        <div id="addressInputFields" style="display: none;">
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Last Name">
-            <input type="text" placeholder="Address">
-            <input type="text" placeholder="Apt/Ste">
-            <input type="text" placeholder="City">
-            <input type="text" placeholder="State">
-            <input type="text" placeholder="Zipcode">
-            <label>
-                <input type="checkbox"> Same as billing address
-            </label>
-        </div>
       </div>
-      <div class="contact-box">
-        <span>PAYMENT METHOD</span>
-        <button id="paymentDropdownButton">▼</button>
-        <div id="paymentInputFields" style="display: none;">
-            <input type="text" placeholder="Card Number">
-            <input type="text" placeholder="Expiration Month">
-            <input type="text" placeholder="Expiration Year">
-            <input type="text" placeholder="Security Code">
-            <input type="text" placeholder="Name on Card">
-        </div>
-      </div>
-      <a href="confirmation.html"><button id="placeOrderButton" class="place-order-btn">PLACE ORDER</button></a>
-      </div>
-      <div class="col-md-4">
-        <div class="order-summary2">
-          <h3>Order Summary:</h3>
-          <div class="order-summary-box2"></div>
-          <p class="cartText2">*By placing your order, you agree to the <a href="helpPage.html">Delivery Terms</a></p>
-        </div>
-      </div>
-  </div>
-</div>
+    </div>
+  </form>
+  <!-- End of form -->
 <script src="checkout.js"></script>
-</body>
+
 <!--FOOTER-->
 <footer>
   <div class="container">
@@ -122,4 +140,6 @@
       <p>&copy; 2023 BumpBites . All rights reserved. </p>
    </div>
 </footer>
+</body>
+
 </html>
