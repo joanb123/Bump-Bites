@@ -125,28 +125,24 @@
   #signIn2 {
     width: 374px;
     height: 63px;
-    flex-shrink: 0;
     background: #4C6044;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     display: flex;
-    align-items: center; 
-    justify-content: center; /* Align text horizontally in the button */
-    margin-right: 200px; /* Adjust the margin to move it to the right */
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
     margin-left: 100px;
-    margin-top: 50px; /* Adjust the margin to move it down */
+    margin-top: 50px;
     margin-bottom: 50px;
-  }
-  
-  #signIn2 a {
-    color: #FFF;
-    font-family: 'Vilane', sans-serif;
+    color: #FFF; /* Style for text color */
+    font-family: 'Vilane', sans-serif; /* Ensure this font is loaded or available */
     font-size: 36px;
     font-weight: 200;
-    line-height: normal;
-    text-decoration: none; /* Remove underline from the link */
-    margin: 0; /* Remove default margin for the <a> tag */
-  }
+    text-decoration: none; /* This applies if the text were in an <a> tag */
+    border: none; /* Assuming you might not want a border */
+    cursor: pointer; /* Gives a hand cursor on hover */
+}
   
   /* Add the following styles to your existing CSS */
   
@@ -370,15 +366,23 @@ label[for="terms"] {
 #signUpButton {
     width: 374px;
     height: 63px;
-    flex-shrink: 0;
     background: #4C6044;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 100px; /* Adjust the margin to move it to the right */
+    margin-right: 200px;
+    margin-left: 100px;
     margin-top: 50px;
+    margin-bottom: 50px;
+    color: #FFF; /* Style for text color */
+    font-family: 'Vilane', sans-serif; /* Ensure this font is loaded or available */
+    font-size: 36px;
+    font-weight: 200;
+    text-decoration: none; /* This applies if the text were in an <a> tag */
+    border: none; /* Assuming you might not want a border */
+    cursor: pointer; /* Gives a hand cursor on hover */
   }
 
 #signUpButton a {
