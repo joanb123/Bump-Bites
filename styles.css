@@ -93,6 +93,7 @@ footer{
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  clear: both;
  
 }
 
@@ -1781,6 +1782,20 @@ height: 66px;
   margin-left: 150px;
   padding: 20px;
   margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+
+.col-md-8 {
+  float: left;
+}
+
+.col-md-4 {
+  float: right;
+}
+
+.order-summary2 {
+  margin-bottom: 20px;
 }
 
 #dropdownButton {
@@ -1838,11 +1853,13 @@ input[type=email] {
   border: none;
   display: block;
   margin-top: 50px;
-  margin-left: 335px;
+  /* Adjust margin-left to center the button */
+  margin-left: calc(50% - 150px); /* Half of button width */
   margin-bottom: 100px;
   border-radius: 2px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 
 .order-summary2 {
   height: 450px;
