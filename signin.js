@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         const result = await response.json(); // Assuming PHP returns JSON
         if (result.success) {
-            window.location.href = 'myAccount.html'; // Redirect on success
+            window.location.href = 'myAccount1.html'; // Redirect on success
         } else {
             alert("Login failed: " + result.message); // Show error message
         }
