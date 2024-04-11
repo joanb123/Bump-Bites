@@ -78,4 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleCartEmptyMessage(); // Call this function whenever an item is deleted
         }
     });
+
+    // Event listener for the save button
+    const saveMessageBtn = document.getElementById('saveMessage');
+    saveMessageBtn.addEventListener('click', function(event) {
+        alert('Message Saved'); // Display pop-up notification
+    });
 });
