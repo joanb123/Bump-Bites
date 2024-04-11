@@ -614,8 +614,9 @@ button {
 }
 
 /* Input boxes */
-#contactname,
-#contactemail {
+#contactName,
+#contactEmail,
+#contactMessage {
   width: 460px;
   height: 46px;
   flex-shrink: 0;
