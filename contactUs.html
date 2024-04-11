@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 
-<html lang ="en">
-    <meta charset="utf-8">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Contact Us</title>
 
-    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
     <!--This is to link the Favicon (need to resize image to see logo better)-->
     <link rel="icon" type="image" href="imageAssets/favIcon.png">
 
     <!--linking CSS-->
     <link rel="stylesheet" href="styles.css">
+    </head>
 
-    <!--Heading of the Contact Us Page-->
-    <h1 class id="contactUs">
-        Contact Us!
-    </h1>
-
-<body class="commonBackground"> <!--Apply common background-->
+<body class="commonBackground">
+        <!--Heading of the Contact Us Page-->
+        <h1 class id="contactUs">
+            Contact Us!
+        </h1>
+        <!--Apply common background-->
     <!--contact email with link-->
     <address class="emailLink">
         Need to get in touch with us? Send us a message below or email us at
@@ -26,7 +29,7 @@
     <br>
     <!--Forms-->
     <!--This is to connect to PHP when created in Module 6-->
-    <form action="/initialSignIn.php" method="post">
+    <form action="contactUs.php" method="post">
 
     <!--Contact Us Big Container-->
     <div class="contactContainer">
@@ -44,20 +47,19 @@
 <!--Email address-->
 <label for="contactEmail" class="contactTypography">Email</label>
 <br>
-<input type="text" id="contactEmail" name="contactEmail" placeholder="Email" class="inputField">
+<input type="email" id="contactEmail" name="contactEmail" placeholder="Email" class="inputField">
 <br>
 <br>
-
             <!--User Message-->
             <label for="text" class="contactTypography">Message</label>
             <br>
-            <input type="text" id="messageBox" class="messageBox" name="messageBox">
+            <input type="text" id="contactMessage" class="contactMessage" name="contactMessage">
             <br>
             <br>
             <!--Submit Button-->
-            <a href="emailConfirmation.html"><button type="button" class="sendMessage" value="SEND MESSAGE">
+            <button type="submit" class="sendMessage" value="SEND MESSAGE">
                 SEND MESSAGE
-            </button></a>
+            </button>
         </div>
     </div>
 

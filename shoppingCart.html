@@ -40,11 +40,13 @@
             <p class="cartText">Your shopping cart is empty!</p>
             <h2>Gift Options</h2>
             <hr>
+            <form action="saveMessage.php" method="post">
               <label>
                   <input type="checkbox" name="giftOption" id="giftOption"> Is this a gift? Add a message:
               </label>
               <textarea name="giftMessage" id="giftMessage" placeholder="Enter a special message here"></textarea>
-              <button type="button" id="saveMessage">SAVE</button>
+              <button type="submit" id="saveMessage">SAVE</button>
+          </form>
         </div>
         <div class="order-summary">
             <h3>Order Summary:</h3>

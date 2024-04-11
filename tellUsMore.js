@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .then(response => {
             if (response.ok) {
-                // Redirect to myAccount.html upon successful submission
-                window.location.href = 'myAccount.html';
+                // Redirect to myBox.html upon successful submission
+                window.location.href = 'ourBox.html';
             } else {
                 throw new Error('Form submission failed!');
             }

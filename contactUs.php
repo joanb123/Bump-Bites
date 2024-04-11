@@ -1,39 +1,53 @@
 <?php
-$servername = "127.0.0.1";
-$username = "m6ImAv1H9m";
-$password = "UdKJxGmug4";
-$dbname = "dbm6ImAv1H9m";
 
-// Create connection to MariaDB
-$conn = new mysqli($servername, $contactName, $confirmEmail, $contactMessage);
+    // Database credentials
+    $servername = "127.0.0.1";
+    $username = "m6ImAv1H9m";
+    $password = "UdKJxGmug4";
+    $dbname = "dbm6ImAv1H9m";
 
-// Check the connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["contactName"];
+    $email = $_POST["contactEmail"];
+    $message = $_POST["contactMessage"];
+
+    // Validate input
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format";
+        exit;
+    }
+
+    // Sanitize and Validate Email
+$email = filter_var($_POST['contactEmail'], FILTER_SANITIZE_EMAIL);
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    die("Invalid email format");
 }
 
-// Escape user inputs for security
-$contactName = $conn->real_escape_string($_POST['contactName']);
-$contactEmail = $conn->real_escape_string($_POST['contactEmail']);
-$contactMessage = $conn->real_escape_string($_POST['contactMessage']);
+$name = trim(stripslashes($_POST['contactName']));
+$email = filter_var($email, FILTER_SANITIZE_EMAIL);
+$message = trim(stripslashes($_POST['contactMessage']));
 
-
-// Validate email and password
-if (empty($contactName) || empty($contactEmail) || empty($contactMessage)) 
-
-// SQL query to insert the user data into the database using prepared statements
-$sql = $conn->prepare("INSERT INTO signUpPage (contactName, contactEmail, contactMessage) VALUES (?, ?, ?)");
-$sql->bind_param("sss", $contactName, $contactEmail, $contactMessage);
-
-
-if ($sql->execute() === TRUE) {
+    // Prepare and bind
+    $stmt = $conn->prepare("INSERT INTO contactUs (contactName, contactEmail, contactMessage) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $name, $email, $message);
+    
+    header("Location: emailConfirmation.html"); // Redirect
+if ($stmt->execute() === TRUE) {
     // Redirect user to another page upon successful signup
-    header("Location: tellUsMore.html");
+    header("Location: emailConfirmation.html");
     exit; // Make sure no other code is executed after redirection
 } else {
-    echo "Error: " . $sql->error;
+    echo "Error: " . $stmt->error;
 }
-
-// Close the database connection
+$stmt->close();
 $conn->close();
+}
 ?>

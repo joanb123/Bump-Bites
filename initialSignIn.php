@@ -23,13 +23,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dietary = $conn->real_escape_string($_POST['dietary']);
 
     // Prepare SQL statement to insert form data into the database
-    $stmt = $conn->prepare("INSERT INTO YOUR_TABLE_NAME (expectedDue, trimesterOne, trimesterTwo, trimesterThree, dietary) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO tellUsMore (expectedDue, trimesterOne, trimesterTwo, trimesterThree, dietary) VALUES (?, ?, ?, ?, ?)");
     $stmt->bind_param("sssss", $expectedDue, $trimesterOne, $trimesterTwo, $trimesterThree, $dietary);
 
     // Execute the prepared statement
     if ($stmt->execute() === TRUE) {
         // Redirect user to a confirmation page or display a success message
-        header("Location: confirmation.html");
+        header("Location: ourBox.html");
         exit; // Ensure no further code is executed after redirect
     } else {
         echo "Error: " . $stmt->error;
