@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $servername = "127.0.0.1";
 $username = "m6ImAv1H9m";
 $password = "UdKJxGmug4";
@@ -41,10 +43,15 @@ $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 $sql = $conn->prepare("INSERT INTO signUpPage (firstName, lastName, email, password) VALUES (?, ?, ?, ?)");
 $sql->bind_param("ssss", $firstName, $lastName, $email, $hashedPassword);
 
-setcookie("firstName", $firstName, time() + (86400 * 30), "/"); // Set cookie for 30 days
-header("Location: tellUsMore.html"); // Redirect
-
 if ($sql->execute() === TRUE) {
+    // Set session variables for the logged-in user
+    $_SESSION['user_id'] = $conn->insert_id; // Assuming 'id' is your auto-increment primary key
+    $_SESSION['firstName'] = $firstName;
+    $_SESSION['email'] = $email;
+
+    // After setting other session variables
+    $_SESSION['loggedin'] = true;
+
     // Redirect user to another page upon successful signup
     header("Location: tellUsMore.html");
     exit; // Make sure no other code is executed after redirection

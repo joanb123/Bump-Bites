@@ -31,10 +31,12 @@
       </nav>
     </div>
     <div class="nav-content">
-        <ul class="profile-icons">
-         <li><a href="signIn.html"><i class="fa-solid fa-user"></i></a></li>
-         <li><a href="shoppingCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        </ul>
+      <ul class="profile-icons">
+        <!-- Placeholder for the profile icon -->
+        <li id="profileIconPlaceholder"></li>
+        <!-- Shopping cart icon and link -->
+        <li><a id="shoppingCartIcon" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
         </div>
   </div>
   </header>
@@ -46,7 +48,7 @@
 
 <div class="account-container">
     <div class="sideBar">
-        <a href="myAccount1.html"> <i class="fa-solid fa-user"></i> Profile </a> <br>
+        <a href="myAccount.html"> <i class="fa-solid fa-user"></i> Profile </a> <br>
         <a href="myOrdersAccount.html"> <i class="fa-solid fa-box-open"></i> My Orders</a> <br>
         <a href="myAddressAccount.html"> <i class="fa-solid fa-house"></i> Addresses</a> <br>
         <a href="myPayment.html"> <i class="fa-solid fa-credit-card"></i> Payment Methods </a> <br>
@@ -55,7 +57,7 @@
 
 <div class="sideBar">
     <a href="helpPage.html"> <i class="fa-solid fa-circle-question"></i> Need Help? </a> <br>
-    <a href="index.html"> <i class="fa-solid fa-right-from-bracket"></i> Sign Out </a> <br>
+    <a href="#" id="sign-out-link"> <i class="fa-solid fa-right-from-bracket"></i> Sign Out </a> <br>
 </div>
 </div>
 
@@ -78,7 +80,6 @@
   </div>
 </div>
 </div>
-</body>
 <!--FOOTER-->
 <footer>
   <div class="container">
@@ -116,6 +117,9 @@
       <p>&copy; 2023 BumpBites . All rights reserved. </p>
    </div>
 </footer>
-
+<!-- Include the JavaScript file -->
+<script src="profileIcon.js"></script>
+<script src="updateAccount.js"></script>
+<script src="logout.js"></script>
 </body>
 </html>

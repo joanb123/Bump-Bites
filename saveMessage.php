@@ -1,4 +1,9 @@
 <?php
+
+
+// Start session
+session_start();
+
 // Database connection parameters
 $servername = "MariaDB";
 $username = "m6ImAv1H9m";

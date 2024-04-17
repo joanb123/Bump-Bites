@@ -13,103 +13,113 @@
 </head>
 
 <body class="accountBody">
-  <header class="nav-header">
-    <div class="container">
-      <div class="nav-content">
-      <a href="index.html"><img src="imageAssets/mainLogoImage.png" alt="Bump Bites logo" class="mainLogo"></a>
-    </div>
-    <div class="nav-content">
-      <nav class="navbar">
-        <a href="ourBox.html"> OUR BOX </a>
-        <a href="aboutUs.html"> ABOUT US </a>
-        <a href="blogOne.html"> BLOG </a>
-      </nav>
-    </div>
-    <div class="nav-content">
-        <ul class="profile-icons">
-         <li><a href="signIn.html"><i class="fa-solid fa-user"></i></a></li>
-         <li><a href="shoppingCart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        </ul>
-        </div>
-  </div>
-  </header>
-<div class="myAccount">
-    My Account
-</div>
-<div class="mainAccountContainer">
-
-<div class="account-container">
-  <div class="sideBar">
-    <a href="myAccount1.html"> <i class="fa-solid fa-user"></i> Profile </a> <br>
-    <a href="myOrdersAccount.html"> <i class="fa-solid fa-box-open"></i> My Orders</a> <br>
-    <a href="myAddressAccount.html"> <i class="fa-solid fa-house"></i> Addresses</a> <br>
-    <a href="myPayment.html"> <i class="fa-solid fa-credit-card"></i> Payment Methods </a> <br>
-    <a href="myBoxInfo.html"> <i class="fa-solid fa-box"></i> Box Information </a> <br>
-</div>
-
-<div class="sideBar">
-    <a href="helpPage.html"> <i class="fa-solid fa-circle-question"></i> Need Help? </a> <br>
-    <a href="index.html"> <i class="fa-solid fa-right-from-bracket"></i> Sign Out </a> <br>
-</div>
-</div>
-<!-- right side container with form -->
-<div class="account-containerTwo">
-  <div class="personal-info">
-      PERSONAL INFORMATION
-      <hr class="horizontalInfo">
-  </div>
-<div class="personal-info-form">
-  <form class="personal-infoFormOne" method="post">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname"><br>
-    <label for="changePass">Change Password:</label><br>
-    <input type="text" id="changePass" name="changePass"><br>
-    <label for="emailInfo">Email:</label><br>
-    <input type="text" id="emailInfo" name="emailInfo"><br>
-  <div class="editButton">
-  <button type="submit" class="buttonProfile" value="Submit">SAVE</button>
-  </div>
-  </form>
-</div>
-</div>
-</div>
-<!--FOOTER-->
-<footer>
-  <div class="container">
-      <div class="footer-content">
-          <p class="footer-text" id="quick"><strong>Support</strong></p>
-          <ul class="list">
-            <li><a href="helpPage.html">FAQ</a></li>
-            <li><a href="termsAndCo.html">Terms and Conditons</a></li>
-            <li><a href="privacyPolicy.html">Privacy Policy</a></li>
-          </ul>
-      </div>
-      <!-- vertical line in footer -->
-      <div class="footer-content">
-        <div class="vertical"></div>
-        </div>
-
-      <div class="footer-content">
-          <p class="footer-text2"><strong>Connect With Us</strong></p>
-          <br>
-          <ul class="social-icons">
-           <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
-           <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
-           <li><a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
-          </ul>
+    <header class="nav-header">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html"><img src="imageAssets/mainLogoImage.png" alt="Bump Bites logo" class="mainLogo"></a>
+            </div>
+            <div class="nav-content">
+                <nav class="navbar">
+                    <a href="ourBox.html"> OUR BOX </a>
+                    <a href="aboutUs.html"> ABOUT US </a>
+                    <a href="blogOne.html"> BLOG </a>
+                </nav>
+            </div>
+            <div class="nav-content">
+                <ul class="profile-icons">
+                    <!-- Placeholder for the profile icon -->
+                    <li id="profileIconPlaceholder"></li>
+                    <!-- Shopping cart icon and link -->
+                    <li><a id="shoppingCartIcon" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
           </div>
-          <div class="footer-content">
-          <p class="footer-text2"><strong>Contact Us</strong></p>
-          <br>
-            <ul class="social-icons">
-              <li><a href="contactUs.html"><i class="fa-solid fa-square-envelope"></i></a></li>
-        </ul>
         </div>
-  </div>
-  <div class="bottom-bar">
-      <p>&copy; 2023 BumpBites . All rights reserved. </p>
-   </div>
-</footer>
+    </header>
+    <div class="myAccount">
+        My Account
+    </div>
+    <div class="mainAccountContainer">
+
+        <div class="account-container">
+            <div class="sideBar">
+                <a href="myAccount.html"> <i class="fa-solid fa-user"></i> Profile </a> <br>
+                <a href="myOrdersAccount.html"> <i class="fa-solid fa-box-open"></i> My Orders</a> <br>
+                <a href="myAddressAccount.html"> <i class="fa-solid fa-house"></i> Addresses</a> <br>
+                <a href="myPayment.html"> <i class="fa-solid fa-credit-card"></i> Payment Methods </a> <br>
+                <a href="myBoxInfo.html"> <i class="fa-solid fa-box"></i> Box Information </a> <br>
+            </div>
+
+            <div class="sideBar">
+                <a href="helpPage.html"> <i class="fa-solid fa-circle-question"></i> Need Help? </a> <br>
+                <a href="#" id="sign-out-link"> <i class="fa-solid fa-right-from-bracket"></i> Sign Out </a> <br>
+
+            </div>
+        </div>
+        <!-- right side container with form -->
+        <div class="account-containerTwo">
+            <div class="personal-info">
+                PERSONAL INFORMATION
+                <hr class="horizontalInfo">
+            </div>
+            <div class="personal-info-form">
+                <form class="personal-infoFormOne" method="post" action="updateAccount.php">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="changePass">Change Password:</label><br>
+                    <input type="text" id="changePass" name="changePass"><br>
+                    <label for="emailInfo">Email:</label><br>
+                    <input type="text" id="emailInfo" name="emailInfo"><br>
+                    <div class="editButton">
+                        <button type="submit" class="buttonProfile" value="Submit">SAVE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text" id="quick"><strong>Support</strong></p>
+                <ul class="list">
+                    <li><a href="helpPage.html">FAQ</a></li>
+                    <li><a href="termsAndCo.html">Terms and Conditons</a></li>
+                    <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!-- vertical line in footer -->
+            <div class="footer-content">
+                <div class="vertical"></div>
+            </div>
+
+            <div class="footer-content">
+                <p class="footer-text2"><strong>Connect With Us</strong></p>
+                <br>
+                <ul class="social-icons">
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <p class="footer-text2"><strong>Contact Us</strong></p>
+                <br>
+                <ul class="social-icons">
+                    <li><a href="contactUs.html"><i class="fa-solid fa-square-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 BumpBites . All rights reserved. </p>
+        </div>
+    </footer>
+
+     <!-- Include the JavaScript file -->
+ <script src="profileIcon.js"></script>
+ <script src="updateAccount.js"></script>
+ <script src="logout.js"></script>
+</body>
+
 </html>

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Assuming validation passes, submit the form data using AJAX
         const formData = new FormData(form);
-        fetch('initialSignIn.php', {
+        fetch('tellUsMore.php', {
             method: 'POST',
             body: formData,
         })

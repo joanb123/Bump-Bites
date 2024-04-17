@@ -1,4 +1,8 @@
 <?php
+
+// Start session
+session_start();
+
 // Replace these variables with your actual database details
 $servername = "127.0.0.1";
 $username = "m6ImAv1H9m";

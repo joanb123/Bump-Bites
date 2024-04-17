@@ -1,4 +1,9 @@
 <?php
+
+
+// Start session
+session_start();
+
 // Database credentials
 $servername = "127.0.0.1";
 $username = "m6ImAv1H9m";
